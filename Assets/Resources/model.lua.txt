@@ -1,0 +1,205 @@
+rootNode = gr.node('root')
+--------------------TosoNode--------------------
+TosoNode = gr.node('TosoNode')
+rootNode:add_child(TosoNode)
+TosoNode:scale(1.000, 1.000, 1.000)
+TosoNode:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------Torso--------------------
+Torso_mat = gr.material({ 1.000, 1.000, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+Torso = gr.mesh('cube', 'Torso')
+Torso:set_material(Torso_mat)
+TosoNode:add_child(Torso)
+Torso:scale(1.126, 0.348, 1.000)
+Torso:translate(0.000, 0.125, 0.000)
+----------------------------------------
+
+--------------------TorsoDec--------------------
+TorsoDec_mat = gr.material({ 1.000, 1.000, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+TorsoDec = gr.mesh('cube', 'TorsoDec')
+TorsoDec:set_material(TorsoDec_mat)
+TosoNode:add_child(TorsoDec)
+TorsoDec:scale(1.449, 0.363, 1.209)
+TorsoDec:translate(0.038, 0.403, -0.003)
+----------------------------------------
+
+--------------------TorsoDec2--------------------
+TorsoDec2_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+TorsoDec2 = gr.mesh('cube', 'TorsoDec2')
+TorsoDec2:set_material(TorsoDec2_mat)
+TosoNode:add_child(TorsoDec2)
+TorsoDec2:scale(1.622, 0.363, 1.262)
+TorsoDec2:translate(0.031, 0.686, -0.004)
+----------------------------------------
+
+--------------------HipsNode--------------------
+HipsNode = gr.node('HipsNode')
+TosoNode:add_child(HipsNode)
+HipsNode:scale(1.000, 1.000, 1.000)
+HipsNode:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------Hips--------------------
+Hips_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+Hips = gr.mesh('cube', 'Hips')
+Hips:set_material(Hips_mat)
+HipsNode:add_child(Hips)
+Hips:scale(1.524, 0.418, 1.142)
+Hips:translate(0.025, -0.194, -0.010)
+----------------------------------------
+
+--------------------ShoulderNode--------------------
+ShoulderNode = gr.node('ShoulderNode')
+TosoNode:add_child(ShoulderNode)
+ShoulderNode:scale(1.000, 1.000, 1.000)
+ShoulderNode:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------Shoulder--------------------
+Shoulder_mat = gr.material({ 0.105, 1.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+Shoulder = gr.mesh('cube', 'Shoulder')
+Shoulder:set_material(Shoulder_mat)
+ShoulderNode:add_child(Shoulder)
+Shoulder:scale(1.876, 0.366, 1.421)
+Shoulder:translate(0.001, 0.871, -0.005)
+----------------------------------------
+
+--------------------ShoulderDecoNode--------------------
+ShoulderDecoNode = gr.node('ShoulderDecoNode')
+ShoulderNode:add_child(ShoulderDecoNode)
+ShoulderDecoNode:scale(1.000, 1.000, 1.000)
+ShoulderDecoNode:translate(-1.039, 1.020, 0.000)
+----------------------------------------
+
+--------------------RightUpperArmJoint--------------------
+RightUpperArmJoint = gr.joint('RightUpperArmJoint', { -20.000, 0.000, 20.000 }, { 0.000, 0.000, 0.000 })
+ShoulderDecoNode:add_child(RightUpperArmJoint)
+RightUpperArmJoint:scale(1.000, 1.000, 1.000)
+RightUpperArmJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------ShoulderDec--------------------
+ShoulderDec_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+ShoulderDec = gr.mesh('sphere', 'ShoulderDec')
+ShoulderDec:set_material(ShoulderDec_mat)
+RightUpperArmJoint:add_child(ShoulderDec)
+ShoulderDec:scale(0.385, 0.364, 0.634)
+ShoulderDec:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightUpperArm--------------------
+RightUpperArm_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightUpperArm = gr.mesh('cube', 'RightUpperArm')
+RightUpperArm:set_material(RightUpperArm_mat)
+RightUpperArmJoint:add_child(RightUpperArm)
+RightUpperArm:scale(1.233, 0.537, 0.838)
+RightUpperArm:rotate('z', -318.747)
+RightUpperArm:translate(-0.554, -0.369, 0.018)
+----------------------------------------
+
+--------------------RightLowerArmNode--------------------
+RightLowerArmNode = gr.node('RightLowerArmNode')
+RightUpperArmJoint:add_child(RightLowerArmNode)
+RightLowerArmNode:scale(1.000, 1.000, 1.000)
+RightLowerArmNode:translate(-1.031, -0.907, 0.000)
+----------------------------------------
+
+--------------------RightLowerArmJoint--------------------
+RightLowerArmJoint = gr.joint('RightLowerArmJoint', { -30.000, 0.000, 30.000 }, { 0.000, 0.000, 0.000 })
+RightLowerArmNode:add_child(RightLowerArmJoint)
+RightLowerArmJoint:scale(1.000, 1.000, 1.000)
+RightLowerArmJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightLowerArmDeco--------------------
+RightLowerArmDeco_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+RightLowerArmDeco = gr.mesh('sphere', 'RightLowerArmDeco')
+RightLowerArmDeco:set_material(RightLowerArmDeco_mat)
+RightLowerArmJoint:add_child(RightLowerArmDeco)
+RightLowerArmDeco:scale(0.400, 0.400, 0.400)
+RightLowerArmDeco:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightLowerArm--------------------
+RightLowerArm_mat = gr.material({ 0.105, 1.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightLowerArm = gr.mesh('cube', 'RightLowerArm')
+RightLowerArm:set_material(RightLowerArm_mat)
+RightLowerArmJoint:add_child(RightLowerArm)
+RightLowerArm:scale(2.194, 0.470, 0.569)
+RightLowerArm:rotate('y', -293.794)
+RightLowerArm:translate(-0.630, -0.139, 0.925)
+----------------------------------------
+
+--------------------ShoulderDeco2Node--------------------
+ShoulderDeco2Node = gr.node('ShoulderDeco2Node')
+ShoulderNode:add_child(ShoulderDeco2Node)
+ShoulderDeco2Node:scale(1.000, 1.000, 1.000)
+ShoulderDeco2Node:translate(1.073, 1.020, 0.000)
+----------------------------------------
+
+--------------------LeftUpperArmJoint--------------------
+LeftUpperArmJoint = gr.joint('LeftUpperArmJoint', { -20.000, 0.000, 20.000 }, { 0.000, 0.000, 0.000 })
+ShoulderDeco2Node:add_child(LeftUpperArmJoint)
+LeftUpperArmJoint:scale(1.000, 1.000, 1.000)
+LeftUpperArmJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------ShoulderDec2--------------------
+ShoulderDec2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+ShoulderDec2 = gr.mesh('sphere', 'ShoulderDec2')
+ShoulderDec2:set_material(ShoulderDec2_mat)
+LeftUpperArmJoint:add_child(ShoulderDec2)
+ShoulderDec2:scale(0.385, 0.364, 0.634)
+ShoulderDec2:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftUpperArm--------------------
+LeftUpperArm_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftUpperArm = gr.mesh('cube', 'LeftUpperArm')
+LeftUpperArm:set_material(LeftUpperArm_mat)
+LeftUpperArmJoint:add_child(LeftUpperArm)
+LeftUpperArm:scale(1.394, 0.537, 0.838)
+LeftUpperArm:rotate('z', -41.694)
+LeftUpperArm:translate(0.613, -0.496, 0.179)
+----------------------------------------
+
+--------------------LeftLowerArmNode--------------------
+LeftLowerArmNode = gr.node('LeftLowerArmNode')
+LeftUpperArmJoint:add_child(LeftLowerArmNode)
+LeftLowerArmNode:scale(1.000, 1.000, 1.000)
+LeftLowerArmNode:translate(1.314, -1.019, 0.262)
+----------------------------------------
+
+--------------------LeftLowerArmJoint--------------------
+LeftLowerArmJoint = gr.joint('LeftLowerArmJoint', { -30.000, 0.000, 30.000 }, { 0.000, 0.000, 0.000 })
+LeftLowerArmNode:add_child(LeftLowerArmJoint)
+LeftLowerArmJoint:scale(1.000, 1.000, 1.000)
+LeftLowerArmJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftLowerArmDeco--------------------
+LeftLowerArmDeco_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+LeftLowerArmDeco = gr.mesh('sphere', 'LeftLowerArmDeco')
+LeftLowerArmDeco:set_material(LeftLowerArmDeco_mat)
+LeftLowerArmJoint:add_child(LeftLowerArmDeco)
+LeftLowerArmDeco:scale(0.400, 0.400, 0.400)
+LeftLowerArmDeco:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftLowerArm--------------------
+LeftLowerArm_mat = gr.material({ 0.105, 1.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftLowerArm = gr.mesh('cube', 'LeftLowerArm')
+LeftLowerArm:set_material(LeftLowerArm_mat)
+LeftLowerArmJoint:add_child(LeftLowerArm)
+LeftLowerArm:scale(2.194, 0.470, 0.694)
+LeftLowerArm:rotate('x', 324.757)
+LeftLowerArm:rotate('y', -58.513)
+LeftLowerArm:rotate('z', -3.149)
+LeftLowerArm:translate(0.377, -0.045, 0.795)
+----------------------------------------
+
+rootNode:translate(0.000, 0.000, -8.000)
+
+return rootNode
+
