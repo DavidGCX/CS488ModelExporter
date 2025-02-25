@@ -1,205 +1,1945 @@
 rootNode = gr.node('root')
---------------------TosoNode--------------------
-TosoNode = gr.node('TosoNode')
-rootNode:add_child(TosoNode)
-TosoNode:scale(1.000, 1.000, 1.000)
-TosoNode:translate(0.000, 0.000, 0.000)
-----------------------------------------
-
 --------------------Torso--------------------
-Torso_mat = gr.material({ 1.000, 1.000, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
-Torso = gr.mesh('cube', 'Torso')
-Torso:set_material(Torso_mat)
-TosoNode:add_child(Torso)
-Torso:scale(1.126, 0.348, 1.000)
-Torso:translate(0.000, 0.125, 0.000)
+Torso = gr.node('Torso')
+rootNode:add_child(Torso)
+Torso:scale(1.000, 1.000, 1.000)
+Torso:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------TorsoDec--------------------
-TorsoDec_mat = gr.material({ 1.000, 1.000, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
-TorsoDec = gr.mesh('cube', 'TorsoDec')
-TorsoDec:set_material(TorsoDec_mat)
-TosoNode:add_child(TorsoDec)
-TorsoDec:scale(1.449, 0.363, 1.209)
-TorsoDec:translate(0.038, 0.403, -0.003)
+--------------------VisualItem1--------------------
+VisualItem1_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+VisualItem1 = gr.mesh('cube', 'VisualItem1')
+VisualItem1:set_material(VisualItem1_mat)
+Torso:add_child(VisualItem1)
+VisualItem1:scale(0.779, 0.197, 0.600)
+VisualItem1:translate(-0.048, -0.287, 0.180)
 ----------------------------------------
 
---------------------TorsoDec2--------------------
-TorsoDec2_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
-TorsoDec2 = gr.mesh('cube', 'TorsoDec2')
-TorsoDec2:set_material(TorsoDec2_mat)
-TosoNode:add_child(TorsoDec2)
-TorsoDec2:scale(1.622, 0.363, 1.262)
-TorsoDec2:translate(0.031, 0.686, -0.004)
+--------------------VisualItem2--------------------
+VisualItem2_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+VisualItem2 = gr.mesh('cube', 'VisualItem2')
+VisualItem2:set_material(VisualItem2_mat)
+Torso:add_child(VisualItem2)
+VisualItem2:scale(0.828, 0.122, 0.676)
+VisualItem2:translate(-0.040, -0.379, 0.187)
 ----------------------------------------
 
---------------------HipsNode--------------------
-HipsNode = gr.node('HipsNode')
-TosoNode:add_child(HipsNode)
-HipsNode:scale(1.000, 1.000, 1.000)
-HipsNode:translate(0.000, 0.000, 0.000)
+--------------------VisualItem3--------------------
+VisualItem3_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+VisualItem3 = gr.mesh('cube', 'VisualItem3')
+VisualItem3:set_material(VisualItem3_mat)
+Torso:add_child(VisualItem3)
+VisualItem3:scale(0.871, 0.122, 0.698)
+VisualItem3:translate(-0.040, -0.454, 0.187)
 ----------------------------------------
 
---------------------Hips--------------------
-Hips_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
-Hips = gr.mesh('cube', 'Hips')
-Hips:set_material(Hips_mat)
-HipsNode:add_child(Hips)
-Hips:scale(1.524, 0.418, 1.142)
-Hips:translate(0.025, -0.194, -0.010)
+--------------------VisualItem4--------------------
+VisualItem4_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+VisualItem4 = gr.mesh('cube', 'VisualItem4')
+VisualItem4:set_material(VisualItem4_mat)
+Torso:add_child(VisualItem4)
+VisualItem4:scale(0.879, 0.221, 0.663)
+VisualItem4:translate(-0.045, -0.075, 0.169)
 ----------------------------------------
 
---------------------ShoulderNode--------------------
-ShoulderNode = gr.node('ShoulderNode')
-TosoNode:add_child(ShoulderNode)
-ShoulderNode:scale(1.000, 1.000, 1.000)
-ShoulderNode:translate(0.000, 0.000, 0.000)
+--------------------VisualItem5--------------------
+VisualItem5_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+VisualItem5 = gr.mesh('cube', 'VisualItem5')
+VisualItem5:set_material(VisualItem5_mat)
+Torso:add_child(VisualItem5)
+VisualItem5:scale(0.960, 0.130, 0.723)
+VisualItem5:translate(-0.036, -0.004, 0.169)
 ----------------------------------------
 
---------------------Shoulder--------------------
-Shoulder_mat = gr.material({ 0.105, 1.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
-Shoulder = gr.mesh('cube', 'Shoulder')
-Shoulder:set_material(Shoulder_mat)
-ShoulderNode:add_child(Shoulder)
-Shoulder:scale(1.876, 0.366, 1.421)
-Shoulder:translate(0.001, 0.871, -0.005)
+--------------------MiddleDeco1--------------------
+MiddleDeco1_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco1 = gr.mesh('cube', 'MiddleDeco1')
+MiddleDeco1:set_material(MiddleDeco1_mat)
+Torso:add_child(MiddleDeco1)
+MiddleDeco1:scale(0.389, 0.031, 0.267)
+MiddleDeco1:translate(-0.057, 0.024, 0.454)
 ----------------------------------------
 
---------------------ShoulderDecoNode--------------------
-ShoulderDecoNode = gr.node('ShoulderDecoNode')
-ShoulderNode:add_child(ShoulderDecoNode)
-ShoulderDecoNode:scale(1.000, 1.000, 1.000)
-ShoulderDecoNode:translate(-1.039, 1.020, 0.000)
+--------------------MiddleDeco6--------------------
+MiddleDeco6_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco6 = gr.mesh('cube', 'MiddleDeco6')
+MiddleDeco6:set_material(MiddleDeco6_mat)
+Torso:add_child(MiddleDeco6)
+MiddleDeco6:scale(0.377, 0.010, 0.267)
+MiddleDeco6:translate(-0.051, -0.092, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco8--------------------
+MiddleDeco8_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco8 = gr.mesh('cube', 'MiddleDeco8')
+MiddleDeco8:set_material(MiddleDeco8_mat)
+Torso:add_child(MiddleDeco8)
+MiddleDeco8:scale(0.377, 0.010, 0.267)
+MiddleDeco8:translate(-0.051, -0.151, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco9--------------------
+MiddleDeco9_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco9 = gr.mesh('cube', 'MiddleDeco9')
+MiddleDeco9:set_material(MiddleDeco9_mat)
+Torso:add_child(MiddleDeco9)
+MiddleDeco9:scale(0.377, 0.010, 0.267)
+MiddleDeco9:translate(-0.051, -0.210, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco10--------------------
+MiddleDeco10_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco10 = gr.mesh('cube', 'MiddleDeco10')
+MiddleDeco10:set_material(MiddleDeco10_mat)
+Torso:add_child(MiddleDeco10)
+MiddleDeco10:scale(0.377, 0.010, 0.267)
+MiddleDeco10:translate(-0.051, -0.278, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco11--------------------
+MiddleDeco11_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco11 = gr.mesh('cube', 'MiddleDeco11')
+MiddleDeco11:set_material(MiddleDeco11_mat)
+Torso:add_child(MiddleDeco11)
+MiddleDeco11:scale(0.377, 0.010, 0.267)
+MiddleDeco11:translate(-0.051, -0.337, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco12--------------------
+MiddleDeco12_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco12 = gr.mesh('cube', 'MiddleDeco12')
+MiddleDeco12:set_material(MiddleDeco12_mat)
+Torso:add_child(MiddleDeco12)
+MiddleDeco12:scale(0.377, 0.010, 0.267)
+MiddleDeco12:translate(-0.051, -0.408, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco7--------------------
+MiddleDeco7_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco7 = gr.mesh('cube', 'MiddleDeco7')
+MiddleDeco7:set_material(MiddleDeco7_mat)
+Torso:add_child(MiddleDeco7)
+MiddleDeco7:scale(0.377, 0.010, 0.267)
+MiddleDeco7:translate(-0.051, -0.033, 0.439)
+----------------------------------------
+
+--------------------MiddleDeco2--------------------
+MiddleDeco2_mat = gr.material({ 0.976, 0.976, 0.976 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco2 = gr.mesh('cube', 'MiddleDeco2')
+MiddleDeco2:set_material(MiddleDeco2_mat)
+Torso:add_child(MiddleDeco2)
+MiddleDeco2:scale(0.391, 0.031, 0.267)
+MiddleDeco2:translate(-0.058, -0.482, 0.453)
+----------------------------------------
+
+--------------------MiddleDeco3--------------------
+MiddleDeco3_mat = gr.material({ 0.976, 0.976, 0.976 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco3 = gr.mesh('cube', 'MiddleDeco3')
+MiddleDeco3:set_material(MiddleDeco3_mat)
+Torso:add_child(MiddleDeco3)
+MiddleDeco3:scale(0.501, 0.033, 0.267)
+MiddleDeco3:rotate('z', -90.000)
+MiddleDeco3:translate(-0.237, -0.224, 0.453)
+----------------------------------------
+
+--------------------MiddleDeco13--------------------
+MiddleDeco13_mat = gr.material({ 0.976, 0.976, 0.976 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco13 = gr.mesh('cube', 'MiddleDeco13')
+MiddleDeco13:set_material(MiddleDeco13_mat)
+Torso:add_child(MiddleDeco13)
+MiddleDeco13:scale(0.501, 0.033, 0.267)
+MiddleDeco13:rotate('z', -90.000)
+MiddleDeco13:translate(-0.060, -0.224, 0.453)
+----------------------------------------
+
+--------------------MiddleDeco5--------------------
+MiddleDeco5_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco5 = gr.mesh('cube', 'MiddleDeco5')
+MiddleDeco5:set_material(MiddleDeco5_mat)
+Torso:add_child(MiddleDeco5)
+MiddleDeco5:scale(0.355, 0.523, 0.038)
+MiddleDeco5:translate(-0.047, -0.233, 0.535)
+----------------------------------------
+
+--------------------MiddleDeco4--------------------
+MiddleDeco4_mat = gr.material({ 0.976, 0.976, 0.976 }, { 0.1, 0.1, 0.1 }, 10)
+MiddleDeco4 = gr.mesh('cube', 'MiddleDeco4')
+MiddleDeco4:set_material(MiddleDeco4_mat)
+Torso:add_child(MiddleDeco4)
+MiddleDeco4:scale(0.501, 0.033, 0.267)
+MiddleDeco4:rotate('z', -90.000)
+MiddleDeco4:translate(0.119, -0.224, 0.453)
+----------------------------------------
+
+--------------------Shoulders--------------------
+Shoulders = gr.node('Shoulders')
+Torso:add_child(Shoulders)
+Shoulders:scale(1.000, 1.000, 1.000)
+Shoulders:translate(0.000, 0.275, 0.000)
+----------------------------------------
+
+--------------------VisualItem--------------------
+VisualItem_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+VisualItem = gr.mesh('cube', 'VisualItem')
+VisualItem:set_material(VisualItem_mat)
+Shoulders:add_child(VisualItem)
+VisualItem:scale(1.134, 0.389, 0.884)
+VisualItem:translate(-0.049, -0.048, 0.171)
+----------------------------------------
+
+--------------------Window--------------------
+Window_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+Window = gr.mesh('cube', 'Window')
+Window:set_material(Window_mat)
+Shoulders:add_child(Window)
+Window:scale(0.429, 0.267, 0.147)
+Window:translate(-0.340, -0.044, 0.558)
+----------------------------------------
+
+--------------------Window2--------------------
+Window2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+Window2 = gr.mesh('cube', 'Window2')
+Window2:set_material(Window2_mat)
+Shoulders:add_child(Window2)
+Window2:scale(0.438, 0.270, 0.147)
+Window2:translate(0.242, -0.038, 0.558)
+----------------------------------------
+
+--------------------Neck--------------------
+Neck = gr.node('Neck')
+Shoulders:add_child(Neck)
+Neck:scale(1.000, 1.000, 1.000)
+Neck:translate(-0.034, 0.134, 0.149)
+----------------------------------------
+
+--------------------NeckJoint--------------------
+NeckJoint = gr.joint('NeckJoint', { 0.000, 0.000, 0.000 }, { -30.000, 0.000, 30.000 })
+Neck:add_child(NeckJoint)
+NeckJoint:scale(1.000, 1.000, 1.000)
+NeckJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------NeckJointVisual--------------------
+NeckJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+NeckJointVisual = gr.mesh('cube', 'NeckJointVisual')
+NeckJointVisual:set_material(NeckJointVisual_mat)
+NeckJoint:add_child(NeckJointVisual)
+NeckJointVisual:scale(0.099, 0.102, 0.095)
+NeckJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------Sphere--------------------
+Sphere_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+Sphere = gr.mesh('sphere', 'Sphere')
+Sphere:set_material(Sphere_mat)
+NeckJoint:add_child(Sphere)
+Sphere:scale(0.086, 0.101, 0.084)
+Sphere:translate(-0.005, 0.058, -0.003)
+----------------------------------------
+
+--------------------Head--------------------
+Head = gr.node('Head')
+NeckJoint:add_child(Head)
+Head:scale(1.000, 1.000, 1.000)
+Head:rotate('y', -270.000)
+Head:translate(-0.011, 0.115, 0.000)
+----------------------------------------
+
+--------------------NeckToHeadJoint--------------------
+NeckToHeadJoint = gr.joint('NeckToHeadJoint', { -30.000, 0.000, 30.000 }, { -30.000, 0.000, 30.000 })
+Head:add_child(NeckToHeadJoint)
+NeckToHeadJoint:scale(1.000, 1.000, 1.000)
+NeckToHeadJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------NeckToHeadJointVisual--------------------
+NeckToHeadJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+NeckToHeadJointVisual = gr.mesh('cube', 'NeckToHeadJointVisual')
+NeckToHeadJointVisual:set_material(NeckToHeadJointVisual_mat)
+NeckToHeadJoint:add_child(NeckToHeadJointVisual)
+NeckToHeadJointVisual:scale(0.075, 0.062, 0.060)
+NeckToHeadJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------HeadVisualItem1--------------------
+HeadVisualItem1_mat = gr.material({ 0.976, 0.976, 0.976 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem1 = gr.mesh('cube', 'HeadVisualItem1')
+HeadVisualItem1:set_material(HeadVisualItem1_mat)
+NeckToHeadJoint:add_child(HeadVisualItem1)
+HeadVisualItem1:scale(0.159, 0.116, 0.151)
+HeadVisualItem1:rotate('y', -27.847)
+HeadVisualItem1:translate(-0.062, 0.044, -0.025)
+----------------------------------------
+
+--------------------HeadVisualItem2--------------------
+HeadVisualItem2_mat = gr.material({ 0.976, 0.976, 0.976 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem2 = gr.mesh('cube', 'HeadVisualItem2')
+HeadVisualItem2:set_material(HeadVisualItem2_mat)
+NeckToHeadJoint:add_child(HeadVisualItem2)
+HeadVisualItem2:scale(0.159, 0.114, 0.151)
+HeadVisualItem2:rotate('y', -327.821)
+HeadVisualItem2:translate(-0.059, 0.043, 0.025)
+----------------------------------------
+
+--------------------HeadVisualItem3--------------------
+HeadVisualItem3_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem3 = gr.mesh('cube', 'HeadVisualItem3')
+HeadVisualItem3:set_material(HeadVisualItem3_mat)
+NeckToHeadJoint:add_child(HeadVisualItem3)
+HeadVisualItem3:scale(0.159, 0.134, 0.151)
+HeadVisualItem3:translate(-0.007, 0.052, 0.056)
+----------------------------------------
+
+--------------------HeadVisualItem5--------------------
+HeadVisualItem5_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem5 = gr.mesh('cube', 'HeadVisualItem5')
+HeadVisualItem5:set_material(HeadVisualItem5_mat)
+NeckToHeadJoint:add_child(HeadVisualItem5)
+HeadVisualItem5:scale(0.159, 0.143, 0.256)
+HeadVisualItem5:translate(0.047, 0.055, 0.004)
+----------------------------------------
+
+--------------------HeadVisualItem12--------------------
+HeadVisualItem12_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem12 = gr.mesh('cube', 'HeadVisualItem12')
+HeadVisualItem12:set_material(HeadVisualItem12_mat)
+NeckToHeadJoint:add_child(HeadVisualItem12)
+HeadVisualItem12:scale(0.155, 0.099, 0.263)
+HeadVisualItem12:translate(0.046, 0.157, 0.000)
+----------------------------------------
+
+--------------------HeadVisualItem13--------------------
+HeadVisualItem13_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem13 = gr.mesh('cube', 'HeadVisualItem13')
+HeadVisualItem13:set_material(HeadVisualItem13_mat)
+NeckToHeadJoint:add_child(HeadVisualItem13)
+HeadVisualItem13:scale(0.154, 0.093, 0.203)
+HeadVisualItem13:translate(0.046, 0.195, -0.001)
+----------------------------------------
+
+--------------------HeadVisualItem7--------------------
+HeadVisualItem7_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem7 = gr.mesh('cube', 'HeadVisualItem7')
+HeadVisualItem7:set_material(HeadVisualItem7_mat)
+NeckToHeadJoint:add_child(HeadVisualItem7)
+HeadVisualItem7:scale(0.222, 0.135, 0.034)
+HeadVisualItem7:translate(0.012, 0.146, -0.132)
+----------------------------------------
+
+--------------------HeadVisualItem16--------------------
+HeadVisualItem16_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem16 = gr.mesh('cube', 'HeadVisualItem16')
+HeadVisualItem16:set_material(HeadVisualItem16_mat)
+NeckToHeadJoint:add_child(HeadVisualItem16)
+HeadVisualItem16:scale(0.029, 0.255, 0.035)
+HeadVisualItem16:translate(-0.088, 0.207, -0.126)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaRightTop--------------------
+HeadVisualItemAntennaRightTop_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaRightTop = gr.mesh('cube', 'HeadVisualItemAntennaRightTop')
+HeadVisualItemAntennaRightTop:set_material(HeadVisualItemAntennaRightTop_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaRightTop)
+HeadVisualItemAntennaRightTop:scale(0.028, 0.394, 0.047)
+HeadVisualItemAntennaRightTop:rotate('z', -25.747)
+HeadVisualItemAntennaRightTop:translate(0.135, 0.257, -0.171)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaLeftTop--------------------
+HeadVisualItemAntennaLeftTop_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaLeftTop = gr.mesh('cube', 'HeadVisualItemAntennaLeftTop')
+HeadVisualItemAntennaLeftTop:set_material(HeadVisualItemAntennaLeftTop_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaLeftTop)
+HeadVisualItemAntennaLeftTop:scale(0.028, 0.394, 0.047)
+HeadVisualItemAntennaLeftTop:rotate('z', -25.747)
+HeadVisualItemAntennaLeftTop:translate(0.135, 0.257, 0.179)
+----------------------------------------
+
+--------------------HeadVisualItem17--------------------
+HeadVisualItem17_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem17 = gr.mesh('cube', 'HeadVisualItem17')
+HeadVisualItem17:set_material(HeadVisualItem17_mat)
+NeckToHeadJoint:add_child(HeadVisualItem17)
+HeadVisualItem17:scale(0.025, 0.257, 0.028)
+HeadVisualItem17:translate(-0.083, 0.203, 0.153)
+----------------------------------------
+
+--------------------HeadVisualItem14--------------------
+HeadVisualItem14_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem14 = gr.mesh('cube', 'HeadVisualItem14')
+HeadVisualItem14:set_material(HeadVisualItem14_mat)
+NeckToHeadJoint:add_child(HeadVisualItem14)
+HeadVisualItem14:scale(0.249, 0.168, 0.054)
+HeadVisualItem14:translate(-0.006, 0.068, -0.122)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaRightBot--------------------
+HeadVisualItemAntennaRightBot_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaRightBot = gr.mesh('cube', 'HeadVisualItemAntennaRightBot')
+HeadVisualItemAntennaRightBot:set_material(HeadVisualItemAntennaRightBot_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaRightBot)
+HeadVisualItemAntennaRightBot:scale(0.113, 0.043, 0.045)
+HeadVisualItemAntennaRightBot:translate(-0.066, 0.072, -0.161)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaLeftBot--------------------
+HeadVisualItemAntennaLeftBot_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaLeftBot = gr.mesh('cube', 'HeadVisualItemAntennaLeftBot')
+HeadVisualItemAntennaLeftBot:set_material(HeadVisualItemAntennaLeftBot_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaLeftBot)
+HeadVisualItemAntennaLeftBot:scale(0.113, 0.043, 0.045)
+HeadVisualItemAntennaLeftBot:translate(-0.066, 0.072, 0.189)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaRightMiddle--------------------
+HeadVisualItemAntennaRightMiddle_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaRightMiddle = gr.mesh('sphere', 'HeadVisualItemAntennaRightMiddle')
+HeadVisualItemAntennaRightMiddle:set_material(HeadVisualItemAntennaRightMiddle_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaRightMiddle)
+HeadVisualItemAntennaRightMiddle:scale(0.038, 0.038, 0.038)
+HeadVisualItemAntennaRightMiddle:translate(0.018, 0.072, -0.161)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaLeftMiddle--------------------
+HeadVisualItemAntennaLeftMiddle_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaLeftMiddle = gr.mesh('sphere', 'HeadVisualItemAntennaLeftMiddle')
+HeadVisualItemAntennaLeftMiddle:set_material(HeadVisualItemAntennaLeftMiddle_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaLeftMiddle)
+HeadVisualItemAntennaLeftMiddle:scale(0.038, 0.038, 0.038)
+HeadVisualItemAntennaLeftMiddle:translate(0.018, 0.072, 0.189)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaLeftMiddle2--------------------
+HeadVisualItemAntennaLeftMiddle2_mat = gr.material({ 1.000, 0.752, 0.420 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaLeftMiddle2 = gr.mesh('sphere', 'HeadVisualItemAntennaLeftMiddle2')
+HeadVisualItemAntennaLeftMiddle2:set_material(HeadVisualItemAntennaLeftMiddle2_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaLeftMiddle2)
+HeadVisualItemAntennaLeftMiddle2:scale(0.015, 0.015, 0.015)
+HeadVisualItemAntennaLeftMiddle2:translate(0.018, 0.072, 0.219)
+----------------------------------------
+
+--------------------HeadVisualItemAntennaRightMiddle2--------------------
+HeadVisualItemAntennaRightMiddle2_mat = gr.material({ 1.000, 0.752, 0.420 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemAntennaRightMiddle2 = gr.mesh('sphere', 'HeadVisualItemAntennaRightMiddle2')
+HeadVisualItemAntennaRightMiddle2:set_material(HeadVisualItemAntennaRightMiddle2_mat)
+NeckToHeadJoint:add_child(HeadVisualItemAntennaRightMiddle2)
+HeadVisualItemAntennaRightMiddle2:scale(0.015, 0.015, 0.015)
+HeadVisualItemAntennaRightMiddle2:translate(0.018, 0.072, -0.190)
+----------------------------------------
+
+--------------------HeadVisualItem15--------------------
+HeadVisualItem15_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem15 = gr.mesh('cube', 'HeadVisualItem15')
+HeadVisualItem15:set_material(HeadVisualItem15_mat)
+NeckToHeadJoint:add_child(HeadVisualItem15)
+HeadVisualItem15:scale(0.246, 0.155, 0.054)
+HeadVisualItem15:translate(-0.004, 0.061, 0.132)
+----------------------------------------
+
+--------------------HeadVisualItemFaceCoverLeft--------------------
+HeadVisualItemFaceCoverLeft_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemFaceCoverLeft = gr.mesh('cube', 'HeadVisualItemFaceCoverLeft')
+HeadVisualItemFaceCoverLeft:set_material(HeadVisualItemFaceCoverLeft_mat)
+NeckToHeadJoint:add_child(HeadVisualItemFaceCoverLeft)
+HeadVisualItemFaceCoverLeft:scale(0.060, 0.143, 0.027)
+HeadVisualItemFaceCoverLeft:rotate('y', -26.903)
+HeadVisualItemFaceCoverLeft:translate(-0.136, 0.055, 0.113)
+----------------------------------------
+
+--------------------HeadVisualItemFaceCoverRight--------------------
+HeadVisualItemFaceCoverRight_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemFaceCoverRight = gr.mesh('cube', 'HeadVisualItemFaceCoverRight')
+HeadVisualItemFaceCoverRight:set_material(HeadVisualItemFaceCoverRight_mat)
+NeckToHeadJoint:add_child(HeadVisualItemFaceCoverRight)
+HeadVisualItemFaceCoverRight:scale(0.042, 0.151, 0.022)
+HeadVisualItemFaceCoverRight:rotate('y', -321.390)
+HeadVisualItemFaceCoverRight:translate(-0.132, 0.059, -0.102)
+----------------------------------------
+
+--------------------HeadVisualItemFaceCoverRight2--------------------
+HeadVisualItemFaceCoverRight2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemFaceCoverRight2 = gr.mesh('cube', 'HeadVisualItemFaceCoverRight2')
+HeadVisualItemFaceCoverRight2:set_material(HeadVisualItemFaceCoverRight2_mat)
+NeckToHeadJoint:add_child(HeadVisualItemFaceCoverRight2)
+HeadVisualItemFaceCoverRight2:scale(0.030, 0.136, 0.026)
+HeadVisualItemFaceCoverRight2:rotate('y', -297.314)
+HeadVisualItemFaceCoverRight2:translate(-0.149, 0.052, -0.081)
+----------------------------------------
+
+--------------------HeadVisualItemFaceCoverLeft2--------------------
+HeadVisualItemFaceCoverLeft2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItemFaceCoverLeft2 = gr.mesh('cube', 'HeadVisualItemFaceCoverLeft2')
+HeadVisualItemFaceCoverLeft2:set_material(HeadVisualItemFaceCoverLeft2_mat)
+NeckToHeadJoint:add_child(HeadVisualItemFaceCoverLeft2)
+HeadVisualItemFaceCoverLeft2:scale(0.035, 0.136, 0.034)
+HeadVisualItemFaceCoverLeft2:rotate('y', -345.798)
+HeadVisualItemFaceCoverLeft2:translate(-0.156, 0.052, 0.089)
+----------------------------------------
+
+--------------------HeadVisualItem9--------------------
+HeadVisualItem9_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem9 = gr.mesh('cube', 'HeadVisualItem9')
+HeadVisualItem9:set_material(HeadVisualItem9_mat)
+NeckToHeadJoint:add_child(HeadVisualItem9)
+HeadVisualItem9:scale(0.222, 0.117, 0.045)
+HeadVisualItem9:rotate('x', 53.686)
+HeadVisualItem9:translate(0.012, 0.234, -0.091)
+----------------------------------------
+
+--------------------HeadVisualItem11--------------------
+HeadVisualItem11_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem11 = gr.mesh('cube', 'HeadVisualItem11')
+HeadVisualItem11:set_material(HeadVisualItem11_mat)
+NeckToHeadJoint:add_child(HeadVisualItem11)
+HeadVisualItem11:scale(0.222, 0.049, 0.112)
+HeadVisualItem11:rotate('z', -0.088)
+HeadVisualItem11:translate(0.012, 0.263, -0.002)
+----------------------------------------
+
+--------------------HeadVisualTopDetail1--------------------
+HeadVisualTopDetail1_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualTopDetail1 = gr.mesh('cube', 'HeadVisualTopDetail1')
+HeadVisualTopDetail1:set_material(HeadVisualTopDetail1_mat)
+NeckToHeadJoint:add_child(HeadVisualTopDetail1)
+HeadVisualTopDetail1:scale(0.280, 0.137, 0.062)
+HeadVisualTopDetail1:translate(-0.023, 0.285, -0.002)
+----------------------------------------
+
+--------------------HeadVisualTopDetail2--------------------
+HeadVisualTopDetail2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualTopDetail2 = gr.mesh('cube', 'HeadVisualTopDetail2')
+HeadVisualTopDetail2:set_material(HeadVisualTopDetail2_mat)
+NeckToHeadJoint:add_child(HeadVisualTopDetail2)
+HeadVisualTopDetail2:scale(0.038, 0.111, 0.062)
+HeadVisualTopDetail2:rotate('z', -39.082)
+HeadVisualTopDetail2:translate(0.097, 0.289, -0.002)
+----------------------------------------
+
+--------------------HeadVisualTopDetail3--------------------
+HeadVisualTopDetail3_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualTopDetail3 = gr.mesh('cube', 'HeadVisualTopDetail3')
+HeadVisualTopDetail3:set_material(HeadVisualTopDetail3_mat)
+NeckToHeadJoint:add_child(HeadVisualTopDetail3)
+HeadVisualTopDetail3:scale(0.070, 0.136, 0.062)
+HeadVisualTopDetail3:rotate('z', -89.243)
+HeadVisualTopDetail3:translate(0.079, 0.285, -0.002)
+----------------------------------------
+
+--------------------HeadVisualTopDetail4--------------------
+HeadVisualTopDetail4_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualTopDetail4 = gr.mesh('cube', 'HeadVisualTopDetail4')
+HeadVisualTopDetail4:set_material(HeadVisualTopDetail4_mat)
+NeckToHeadJoint:add_child(HeadVisualTopDetail4)
+HeadVisualTopDetail4:scale(0.160, 0.060, 0.062)
+HeadVisualTopDetail4:rotate('z', -89.243)
+HeadVisualTopDetail4:translate(0.133, 0.077, -0.002)
+----------------------------------------
+
+--------------------HeadVisualItem18--------------------
+HeadVisualItem18_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem18 = gr.mesh('cube', 'HeadVisualItem18')
+HeadVisualItem18:set_material(HeadVisualItem18_mat)
+NeckToHeadJoint:add_child(HeadVisualItem18)
+HeadVisualItem18:scale(0.225, 0.053, 0.235)
+HeadVisualItem18:translate(-0.029, 0.218, 0.005)
+----------------------------------------
+
+--------------------EyeLeft--------------------
+EyeLeft_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+EyeLeft = gr.mesh('cube', 'EyeLeft')
+EyeLeft:set_material(EyeLeft_mat)
+NeckToHeadJoint:add_child(EyeLeft)
+EyeLeft:scale(0.078, 0.025, 0.069)
+EyeLeft:rotate('x', 345.945)
+EyeLeft:translate(-0.097, 0.155, 0.052)
+----------------------------------------
+
+--------------------EyeRight--------------------
+EyeRight_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+EyeRight = gr.mesh('cube', 'EyeRight')
+EyeRight:set_material(EyeRight_mat)
+NeckToHeadJoint:add_child(EyeRight)
+EyeRight:scale(0.078, 0.025, 0.062)
+EyeRight:rotate('x', 11.007)
+EyeRight:translate(-0.105, 0.155, -0.044)
+----------------------------------------
+
+--------------------HeadVisualItem8--------------------
+HeadVisualItem8_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem8 = gr.mesh('cube', 'HeadVisualItem8')
+HeadVisualItem8:set_material(HeadVisualItem8_mat)
+NeckToHeadJoint:add_child(HeadVisualItem8)
+HeadVisualItem8:scale(0.222, 0.135, 0.034)
+HeadVisualItem8:translate(0.012, 0.146, 0.141)
+----------------------------------------
+
+--------------------HeadVisualItem10--------------------
+HeadVisualItem10_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem10 = gr.mesh('cube', 'HeadVisualItem10')
+HeadVisualItem10:set_material(HeadVisualItem10_mat)
+NeckToHeadJoint:add_child(HeadVisualItem10)
+HeadVisualItem10:scale(0.222, 0.128, 0.043)
+HeadVisualItem10:rotate('x', 300.051)
+HeadVisualItem10:translate(0.012, 0.233, 0.101)
+----------------------------------------
+
+--------------------HeadVisualItem4--------------------
+HeadVisualItem4_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem4 = gr.mesh('cube', 'HeadVisualItem4')
+HeadVisualItem4:set_material(HeadVisualItem4_mat)
+NeckToHeadJoint:add_child(HeadVisualItem4)
+HeadVisualItem4:scale(0.159, 0.134, 0.151)
+HeadVisualItem4:translate(-0.021, 0.051, -0.049)
+----------------------------------------
+
+--------------------HeadVisualItem6--------------------
+HeadVisualItem6_mat = gr.material({ 0.689, 0.689, 0.689 }, { 0.1, 0.1, 0.1 }, 10)
+HeadVisualItem6 = gr.mesh('sphere', 'HeadVisualItem6')
+HeadVisualItem6:set_material(HeadVisualItem6_mat)
+NeckToHeadJoint:add_child(HeadVisualItem6)
+HeadVisualItem6:scale(0.129, 0.128, 0.127)
+HeadVisualItem6:translate(-0.009, 0.125, 0.001)
+----------------------------------------
+
+--------------------RightUpperArm--------------------
+RightUpperArm = gr.node('RightUpperArm')
+Shoulders:add_child(RightUpperArm)
+RightUpperArm:scale(1.000, 1.000, 1.000)
+RightUpperArm:translate(-0.752, 0.000, 0.197)
 ----------------------------------------
 
 --------------------RightUpperArmJoint--------------------
-RightUpperArmJoint = gr.joint('RightUpperArmJoint', { -20.000, 0.000, 20.000 }, { 0.000, 0.000, 0.000 })
-ShoulderDecoNode:add_child(RightUpperArmJoint)
+RightUpperArmJoint = gr.joint('RightUpperArmJoint', { -40.000, 0.000, 40.000 }, { 0.000, 0.000, 0.000 })
+RightUpperArm:add_child(RightUpperArmJoint)
 RightUpperArmJoint:scale(1.000, 1.000, 1.000)
 RightUpperArmJoint:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------ShoulderDec--------------------
-ShoulderDec_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
-ShoulderDec = gr.mesh('sphere', 'ShoulderDec')
-ShoulderDec:set_material(ShoulderDec_mat)
-RightUpperArmJoint:add_child(ShoulderDec)
-ShoulderDec:scale(0.385, 0.364, 0.634)
-ShoulderDec:translate(0.000, 0.000, 0.000)
+--------------------RightUpperArmJointVisual--------------------
+RightUpperArmJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightUpperArmJointVisual = gr.mesh('cube', 'RightUpperArmJointVisual')
+RightUpperArmJointVisual:set_material(RightUpperArmJointVisual_mat)
+RightUpperArmJoint:add_child(RightUpperArmJointVisual)
+RightUpperArmJointVisual:scale(0.400, 0.200, 0.200)
+RightUpperArmJointVisual:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------RightUpperArm--------------------
-RightUpperArm_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
-RightUpperArm = gr.mesh('cube', 'RightUpperArm')
-RightUpperArm:set_material(RightUpperArm_mat)
-RightUpperArmJoint:add_child(RightUpperArm)
-RightUpperArm:scale(1.233, 0.537, 0.838)
-RightUpperArm:rotate('z', -318.747)
-RightUpperArm:translate(-0.554, -0.369, 0.018)
+--------------------RightUpperArmVisualItem1--------------------
+RightUpperArmVisualItem1_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightUpperArmVisualItem1 = gr.mesh('cube', 'RightUpperArmVisualItem1')
+RightUpperArmVisualItem1:set_material(RightUpperArmVisualItem1_mat)
+RightUpperArmJoint:add_child(RightUpperArmVisualItem1)
+RightUpperArmVisualItem1:scale(0.373, 0.561, 0.417)
+RightUpperArmVisualItem1:rotate('z', -7.000)
+RightUpperArmVisualItem1:translate(-0.229, -0.010, 0.000)
 ----------------------------------------
 
---------------------RightLowerArmNode--------------------
-RightLowerArmNode = gr.node('RightLowerArmNode')
-RightUpperArmJoint:add_child(RightLowerArmNode)
-RightLowerArmNode:scale(1.000, 1.000, 1.000)
-RightLowerArmNode:translate(-1.031, -0.907, 0.000)
+--------------------RightUpperArmVisualItem2--------------------
+RightUpperArmVisualItem2_mat = gr.material({ 0.575, 0.575, 0.575 }, { 0.1, 0.1, 0.1 }, 10)
+RightUpperArmVisualItem2 = gr.mesh('cube', 'RightUpperArmVisualItem2')
+RightUpperArmVisualItem2:set_material(RightUpperArmVisualItem2_mat)
+RightUpperArmJoint:add_child(RightUpperArmVisualItem2)
+RightUpperArmVisualItem2:scale(0.255, 0.410, 0.246)
+RightUpperArmVisualItem2:rotate('z', -7.000)
+RightUpperArmVisualItem2:translate(-0.265, -0.300, 0.009)
+----------------------------------------
+
+--------------------RightUpperArmVisualItem3--------------------
+RightUpperArmVisualItem3_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightUpperArmVisualItem3 = gr.mesh('cube', 'RightUpperArmVisualItem3')
+RightUpperArmVisualItem3:set_material(RightUpperArmVisualItem3_mat)
+RightUpperArmJoint:add_child(RightUpperArmVisualItem3)
+RightUpperArmVisualItem3:scale(0.275, 0.410, 0.313)
+RightUpperArmVisualItem3:rotate('z', -7.000)
+RightUpperArmVisualItem3:translate(-0.214, 0.117, 0.000)
+----------------------------------------
+
+--------------------RightUpperArmVisualItem4--------------------
+RightUpperArmVisualItem4_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightUpperArmVisualItem4 = gr.mesh('cube', 'RightUpperArmVisualItem4')
+RightUpperArmVisualItem4:set_material(RightUpperArmVisualItem4_mat)
+RightUpperArmJoint:add_child(RightUpperArmVisualItem4)
+RightUpperArmVisualItem4:scale(0.097, 1.173, 0.091)
+RightUpperArmVisualItem4:rotate('z', -7.000)
+RightUpperArmVisualItem4:translate(-0.396, 0.524, 0.000)
+----------------------------------------
+
+--------------------RightLowerArm--------------------
+RightLowerArm = gr.node('RightLowerArm')
+RightUpperArmJoint:add_child(RightLowerArm)
+RightLowerArm:scale(1.000, 1.000, 1.000)
+RightLowerArm:rotate('z', -7.000)
+RightLowerArm:translate(-0.285, -0.464, 0.022)
 ----------------------------------------
 
 --------------------RightLowerArmJoint--------------------
-RightLowerArmJoint = gr.joint('RightLowerArmJoint', { -30.000, 0.000, 30.000 }, { 0.000, 0.000, 0.000 })
-RightLowerArmNode:add_child(RightLowerArmJoint)
+RightLowerArmJoint = gr.joint('RightLowerArmJoint', { -40.000, 0.000, 0.000 }, { 0.000, 0.000, 0.000 })
+RightLowerArm:add_child(RightLowerArmJoint)
 RightLowerArmJoint:scale(1.000, 1.000, 1.000)
 RightLowerArmJoint:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------RightLowerArmDeco--------------------
-RightLowerArmDeco_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
-RightLowerArmDeco = gr.mesh('sphere', 'RightLowerArmDeco')
-RightLowerArmDeco:set_material(RightLowerArmDeco_mat)
-RightLowerArmJoint:add_child(RightLowerArmDeco)
-RightLowerArmDeco:scale(0.400, 0.400, 0.400)
-RightLowerArmDeco:translate(0.000, 0.000, 0.000)
+--------------------RightLowerArmJointVisual--------------------
+RightLowerArmJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightLowerArmJointVisual = gr.mesh('cube', 'RightLowerArmJointVisual')
+RightLowerArmJointVisual:set_material(RightLowerArmJointVisual_mat)
+RightLowerArmJoint:add_child(RightLowerArmJointVisual)
+RightLowerArmJointVisual:scale(0.179, 0.284, 0.200)
+RightLowerArmJointVisual:translate(0.000, -0.105, 0.000)
 ----------------------------------------
 
---------------------RightLowerArm--------------------
-RightLowerArm_mat = gr.material({ 0.105, 1.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
-RightLowerArm = gr.mesh('cube', 'RightLowerArm')
-RightLowerArm:set_material(RightLowerArm_mat)
-RightLowerArmJoint:add_child(RightLowerArm)
-RightLowerArm:scale(2.194, 0.470, 0.569)
-RightLowerArm:rotate('y', -293.794)
-RightLowerArm:translate(-0.630, -0.139, 0.925)
+--------------------RightLowerArmVisualItem1--------------------
+RightLowerArmVisualItem1_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightLowerArmVisualItem1 = gr.mesh('cube', 'RightLowerArmVisualItem1')
+RightLowerArmVisualItem1:set_material(RightLowerArmVisualItem1_mat)
+RightLowerArmJoint:add_child(RightLowerArmVisualItem1)
+RightLowerArmVisualItem1:scale(0.329, 0.494, 0.332)
+RightLowerArmVisualItem1:translate(0.000, -0.396, 0.000)
 ----------------------------------------
 
---------------------ShoulderDeco2Node--------------------
-ShoulderDeco2Node = gr.node('ShoulderDeco2Node')
-ShoulderNode:add_child(ShoulderDeco2Node)
-ShoulderDeco2Node:scale(1.000, 1.000, 1.000)
-ShoulderDeco2Node:translate(1.073, 1.020, 0.000)
+--------------------RightLowerArmVisualItem2--------------------
+RightLowerArmVisualItem2_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightLowerArmVisualItem2 = gr.mesh('cube', 'RightLowerArmVisualItem2')
+RightLowerArmVisualItem2:set_material(RightLowerArmVisualItem2_mat)
+RightLowerArmJoint:add_child(RightLowerArmVisualItem2)
+RightLowerArmVisualItem2:scale(0.259, 0.478, 0.231)
+RightLowerArmVisualItem2:translate(0.000, -0.457, 0.000)
+----------------------------------------
+
+--------------------RightHand--------------------
+RightHand = gr.node('RightHand')
+RightLowerArmJoint:add_child(RightHand)
+RightHand:scale(1.000, 1.000, 1.000)
+RightHand:rotate('y', -180.000)
+RightHand:translate(-0.008, -0.686, 0.000)
+----------------------------------------
+
+--------------------RightHandJoint--------------------
+RightHandJoint = gr.joint('RightHandJoint', { -15.000, 0.000, 15.000 }, { 0.000, 0.000, 0.000 })
+RightHand:add_child(RightHandJoint)
+RightHandJoint:scale(1.000, 1.000, 1.000)
+RightHandJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightHandJointVisual--------------------
+RightHandJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandJointVisual = gr.mesh('sphere', 'RightHandJointVisual')
+RightHandJointVisual:set_material(RightHandJointVisual_mat)
+RightHandJoint:add_child(RightHandJointVisual)
+RightHandJointVisual:scale(0.056, 0.059, 0.059)
+RightHandJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightHandVisualItem1--------------------
+RightHandVisualItem1_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem1 = gr.mesh('cube', 'RightHandVisualItem1')
+RightHandVisualItem1:set_material(RightHandVisualItem1_mat)
+RightHandJoint:add_child(RightHandVisualItem1)
+RightHandVisualItem1:scale(0.063, 0.073, 0.170)
+RightHandVisualItem1:translate(0.000, -0.067, 0.000)
+----------------------------------------
+
+--------------------RightHandVisualItem2--------------------
+RightHandVisualItem2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem2 = gr.mesh('cube', 'RightHandVisualItem2')
+RightHandVisualItem2:set_material(RightHandVisualItem2_mat)
+RightHandJoint:add_child(RightHandVisualItem2)
+RightHandVisualItem2:scale(0.067, 0.073, 0.190)
+RightHandVisualItem2:translate(-0.002, -0.130, 0.000)
+----------------------------------------
+
+--------------------RightHandVisualItem3--------------------
+RightHandVisualItem3_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem3 = gr.mesh('cube', 'RightHandVisualItem3')
+RightHandVisualItem3:set_material(RightHandVisualItem3_mat)
+RightHandJoint:add_child(RightHandVisualItem3)
+RightHandVisualItem3:scale(0.033, 0.077, 0.039)
+RightHandVisualItem3:translate(0.012, -0.204, 0.075)
+----------------------------------------
+
+--------------------RightHandVisualItem3Extend--------------------
+RightHandVisualItem3Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem3Extend = gr.mesh('cube', 'RightHandVisualItem3Extend')
+RightHandVisualItem3Extend:set_material(RightHandVisualItem3Extend_mat)
+RightHandJoint:add_child(RightHandVisualItem3Extend)
+RightHandVisualItem3Extend:scale(0.033, 0.057, 0.039)
+RightHandVisualItem3Extend:rotate('z', -19.066)
+RightHandVisualItem3Extend:translate(0.003, -0.264, 0.075)
+----------------------------------------
+
+--------------------RightHandVisualItem3Extend2--------------------
+RightHandVisualItem3Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem3Extend2 = gr.mesh('cube', 'RightHandVisualItem3Extend2')
+RightHandVisualItem3Extend2:set_material(RightHandVisualItem3Extend2_mat)
+RightHandJoint:add_child(RightHandVisualItem3Extend2)
+RightHandVisualItem3Extend2:scale(0.033, 0.047, 0.039)
+RightHandVisualItem3Extend2:rotate('z', -43.746)
+RightHandVisualItem3Extend2:translate(-0.019, -0.301, 0.075)
+----------------------------------------
+
+--------------------RightHandVisualItem4--------------------
+RightHandVisualItem4_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem4 = gr.mesh('cube', 'RightHandVisualItem4')
+RightHandVisualItem4:set_material(RightHandVisualItem4_mat)
+RightHandJoint:add_child(RightHandVisualItem4)
+RightHandVisualItem4:scale(0.033, 0.077, 0.039)
+RightHandVisualItem4:translate(0.012, -0.204, 0.022)
+----------------------------------------
+
+--------------------RightHandVisualItem4Extend--------------------
+RightHandVisualItem4Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem4Extend = gr.mesh('cube', 'RightHandVisualItem4Extend')
+RightHandVisualItem4Extend:set_material(RightHandVisualItem4Extend_mat)
+RightHandJoint:add_child(RightHandVisualItem4Extend)
+RightHandVisualItem4Extend:scale(0.033, 0.057, 0.039)
+RightHandVisualItem4Extend:rotate('z', -19.066)
+RightHandVisualItem4Extend:translate(0.003, -0.264, 0.022)
+----------------------------------------
+
+--------------------RIghtHandVisualItem4Extend2--------------------
+RIghtHandVisualItem4Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RIghtHandVisualItem4Extend2 = gr.mesh('cube', 'RIghtHandVisualItem4Extend2')
+RIghtHandVisualItem4Extend2:set_material(RIghtHandVisualItem4Extend2_mat)
+RightHandJoint:add_child(RIghtHandVisualItem4Extend2)
+RIghtHandVisualItem4Extend2:scale(0.033, 0.047, 0.039)
+RIghtHandVisualItem4Extend2:rotate('z', -43.746)
+RIghtHandVisualItem4Extend2:translate(-0.019, -0.301, 0.022)
+----------------------------------------
+
+--------------------RightHandVisualItem5--------------------
+RightHandVisualItem5_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem5 = gr.mesh('cube', 'RightHandVisualItem5')
+RightHandVisualItem5:set_material(RightHandVisualItem5_mat)
+RightHandJoint:add_child(RightHandVisualItem5)
+RightHandVisualItem5:scale(0.033, 0.077, 0.039)
+RightHandVisualItem5:translate(0.012, -0.204, -0.029)
+----------------------------------------
+
+--------------------RightHandVisualItem5Extend--------------------
+RightHandVisualItem5Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem5Extend = gr.mesh('cube', 'RightHandVisualItem5Extend')
+RightHandVisualItem5Extend:set_material(RightHandVisualItem5Extend_mat)
+RightHandJoint:add_child(RightHandVisualItem5Extend)
+RightHandVisualItem5Extend:scale(0.033, 0.057, 0.039)
+RightHandVisualItem5Extend:rotate('z', -19.066)
+RightHandVisualItem5Extend:translate(0.003, -0.264, -0.029)
+----------------------------------------
+
+--------------------RightHandVisualItem5Extend2--------------------
+RightHandVisualItem5Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem5Extend2 = gr.mesh('cube', 'RightHandVisualItem5Extend2')
+RightHandVisualItem5Extend2:set_material(RightHandVisualItem5Extend2_mat)
+RightHandJoint:add_child(RightHandVisualItem5Extend2)
+RightHandVisualItem5Extend2:scale(0.033, 0.047, 0.039)
+RightHandVisualItem5Extend2:rotate('z', -43.746)
+RightHandVisualItem5Extend2:translate(-0.019, -0.301, -0.029)
+----------------------------------------
+
+--------------------RightHandVisualItem6--------------------
+RightHandVisualItem6_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem6 = gr.mesh('cube', 'RightHandVisualItem6')
+RightHandVisualItem6:set_material(RightHandVisualItem6_mat)
+RightHandJoint:add_child(RightHandVisualItem6)
+RightHandVisualItem6:scale(0.033, 0.077, 0.039)
+RightHandVisualItem6:translate(0.012, -0.204, -0.076)
+----------------------------------------
+
+--------------------RightHandVisualItem6Extend--------------------
+RightHandVisualItem6Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem6Extend = gr.mesh('cube', 'RightHandVisualItem6Extend')
+RightHandVisualItem6Extend:set_material(RightHandVisualItem6Extend_mat)
+RightHandJoint:add_child(RightHandVisualItem6Extend)
+RightHandVisualItem6Extend:scale(0.033, 0.057, 0.039)
+RightHandVisualItem6Extend:rotate('z', -19.066)
+RightHandVisualItem6Extend:translate(0.003, -0.264, -0.076)
+----------------------------------------
+
+--------------------RightHandVisualItem6Extend2--------------------
+RightHandVisualItem6Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem6Extend2 = gr.mesh('cube', 'RightHandVisualItem6Extend2')
+RightHandVisualItem6Extend2:set_material(RightHandVisualItem6Extend2_mat)
+RightHandJoint:add_child(RightHandVisualItem6Extend2)
+RightHandVisualItem6Extend2:scale(0.033, 0.047, 0.039)
+RightHandVisualItem6Extend2:rotate('z', -43.746)
+RightHandVisualItem6Extend2:translate(-0.019, -0.301, -0.076)
+----------------------------------------
+
+--------------------RightHandVisualItem7ThumbRoot--------------------
+RightHandVisualItem7ThumbRoot_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem7ThumbRoot = gr.mesh('cube', 'RightHandVisualItem7ThumbRoot')
+RightHandVisualItem7ThumbRoot:set_material(RightHandVisualItem7ThumbRoot_mat)
+RightHandJoint:add_child(RightHandVisualItem7ThumbRoot)
+RightHandVisualItem7ThumbRoot:scale(0.033, 0.096, 0.039)
+RightHandVisualItem7ThumbRoot:rotate('x', 46.411)
+RightHandVisualItem7ThumbRoot:translate(0.002, -0.124, -0.105)
+----------------------------------------
+
+--------------------RightHandVisualItem7Thumb--------------------
+RightHandVisualItem7Thumb_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightHandVisualItem7Thumb = gr.mesh('cube', 'RightHandVisualItem7Thumb')
+RightHandVisualItem7Thumb:set_material(RightHandVisualItem7Thumb_mat)
+RightHandJoint:add_child(RightHandVisualItem7Thumb)
+RightHandVisualItem7Thumb:scale(0.033, 0.076, 0.035)
+RightHandVisualItem7Thumb:rotate('x', 12.775)
+RightHandVisualItem7Thumb:translate(0.003, -0.181, -0.144)
+----------------------------------------
+
+--------------------LeftUpperArm--------------------
+LeftUpperArm = gr.node('LeftUpperArm')
+Shoulders:add_child(LeftUpperArm)
+LeftUpperArm:scale(1.000, 1.000, 1.000)
+LeftUpperArm:translate(0.584, 0.000, 0.197)
 ----------------------------------------
 
 --------------------LeftUpperArmJoint--------------------
-LeftUpperArmJoint = gr.joint('LeftUpperArmJoint', { -20.000, 0.000, 20.000 }, { 0.000, 0.000, 0.000 })
-ShoulderDeco2Node:add_child(LeftUpperArmJoint)
+LeftUpperArmJoint = gr.joint('LeftUpperArmJoint', { -40.000, 0.000, 40.000 }, { 0.000, 0.000, 0.000 })
+LeftUpperArm:add_child(LeftUpperArmJoint)
 LeftUpperArmJoint:scale(1.000, 1.000, 1.000)
 LeftUpperArmJoint:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------ShoulderDec2--------------------
-ShoulderDec2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
-ShoulderDec2 = gr.mesh('sphere', 'ShoulderDec2')
-ShoulderDec2:set_material(ShoulderDec2_mat)
-LeftUpperArmJoint:add_child(ShoulderDec2)
-ShoulderDec2:scale(0.385, 0.364, 0.634)
-ShoulderDec2:translate(0.000, 0.000, 0.000)
+--------------------LeftUpperArmJointVisual--------------------
+LeftUpperArmJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftUpperArmJointVisual = gr.mesh('cube', 'LeftUpperArmJointVisual')
+LeftUpperArmJointVisual:set_material(LeftUpperArmJointVisual_mat)
+LeftUpperArmJoint:add_child(LeftUpperArmJointVisual)
+LeftUpperArmJointVisual:scale(0.400, 0.200, 0.200)
+LeftUpperArmJointVisual:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------LeftUpperArm--------------------
-LeftUpperArm_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
-LeftUpperArm = gr.mesh('cube', 'LeftUpperArm')
-LeftUpperArm:set_material(LeftUpperArm_mat)
-LeftUpperArmJoint:add_child(LeftUpperArm)
-LeftUpperArm:scale(1.394, 0.537, 0.838)
-LeftUpperArm:rotate('z', -41.694)
-LeftUpperArm:translate(0.613, -0.496, 0.179)
+--------------------LeftUpperArmVisualItem1--------------------
+LeftUpperArmVisualItem1_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftUpperArmVisualItem1 = gr.mesh('cube', 'LeftUpperArmVisualItem1')
+LeftUpperArmVisualItem1:set_material(LeftUpperArmVisualItem1_mat)
+LeftUpperArmJoint:add_child(LeftUpperArmVisualItem1)
+LeftUpperArmVisualItem1:scale(0.373, 0.561, 0.417)
+LeftUpperArmVisualItem1:rotate('z', -353.000)
+LeftUpperArmVisualItem1:translate(0.299, -0.029, 0.000)
 ----------------------------------------
 
---------------------LeftLowerArmNode--------------------
-LeftLowerArmNode = gr.node('LeftLowerArmNode')
-LeftUpperArmJoint:add_child(LeftLowerArmNode)
-LeftLowerArmNode:scale(1.000, 1.000, 1.000)
-LeftLowerArmNode:translate(1.314, -1.019, 0.262)
+--------------------LeftUpperArmVisualItem2--------------------
+LeftUpperArmVisualItem2_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftUpperArmVisualItem2 = gr.mesh('cube', 'LeftUpperArmVisualItem2')
+LeftUpperArmVisualItem2:set_material(LeftUpperArmVisualItem2_mat)
+LeftUpperArmJoint:add_child(LeftUpperArmVisualItem2)
+LeftUpperArmVisualItem2:scale(0.275, 0.410, 0.313)
+LeftUpperArmVisualItem2:rotate('z', -353.000)
+LeftUpperArmVisualItem2:translate(0.282, 0.104, 0.000)
+----------------------------------------
+
+--------------------LeftUpperArmVisualItem3--------------------
+LeftUpperArmVisualItem3_mat = gr.material({ 0.575, 0.575, 0.575 }, { 0.1, 0.1, 0.1 }, 10)
+LeftUpperArmVisualItem3 = gr.mesh('cube', 'LeftUpperArmVisualItem3')
+LeftUpperArmVisualItem3:set_material(LeftUpperArmVisualItem3_mat)
+LeftUpperArmJoint:add_child(LeftUpperArmVisualItem3)
+LeftUpperArmVisualItem3:scale(0.275, 0.410, 0.313)
+LeftUpperArmVisualItem3:rotate('z', -353.000)
+LeftUpperArmVisualItem3:translate(0.326, -0.257, 0.000)
+----------------------------------------
+
+--------------------LeftUpperArmVisualItem4--------------------
+LeftUpperArmVisualItem4_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftUpperArmVisualItem4 = gr.mesh('cube', 'LeftUpperArmVisualItem4')
+LeftUpperArmVisualItem4:set_material(LeftUpperArmVisualItem4_mat)
+LeftUpperArmJoint:add_child(LeftUpperArmVisualItem4)
+LeftUpperArmVisualItem4:scale(0.097, 1.173, 0.091)
+LeftUpperArmVisualItem4:rotate('z', -353.000)
+LeftUpperArmVisualItem4:translate(0.461, 0.520, 0.000)
+----------------------------------------
+
+--------------------LeftLowerArm--------------------
+LeftLowerArm = gr.node('LeftLowerArm')
+LeftUpperArmJoint:add_child(LeftLowerArm)
+LeftLowerArm:scale(1.000, 1.000, 1.000)
+LeftLowerArm:rotate('z', -353.000)
+LeftLowerArm:translate(0.352, -0.425, 0.022)
 ----------------------------------------
 
 --------------------LeftLowerArmJoint--------------------
-LeftLowerArmJoint = gr.joint('LeftLowerArmJoint', { -30.000, 0.000, 30.000 }, { 0.000, 0.000, 0.000 })
-LeftLowerArmNode:add_child(LeftLowerArmJoint)
+LeftLowerArmJoint = gr.joint('LeftLowerArmJoint', { -40.000, 0.000, 0.000 }, { 0.000, 0.000, 0.000 })
+LeftLowerArm:add_child(LeftLowerArmJoint)
 LeftLowerArmJoint:scale(1.000, 1.000, 1.000)
 LeftLowerArmJoint:translate(0.000, 0.000, 0.000)
 ----------------------------------------
 
---------------------LeftLowerArmDeco--------------------
-LeftLowerArmDeco_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
-LeftLowerArmDeco = gr.mesh('sphere', 'LeftLowerArmDeco')
-LeftLowerArmDeco:set_material(LeftLowerArmDeco_mat)
-LeftLowerArmJoint:add_child(LeftLowerArmDeco)
-LeftLowerArmDeco:scale(0.400, 0.400, 0.400)
-LeftLowerArmDeco:translate(0.000, 0.000, 0.000)
+--------------------LeftLowerArmJointVisual--------------------
+LeftLowerArmJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftLowerArmJointVisual = gr.mesh('cube', 'LeftLowerArmJointVisual')
+LeftLowerArmJointVisual:set_material(LeftLowerArmJointVisual_mat)
+LeftLowerArmJoint:add_child(LeftLowerArmJointVisual)
+LeftLowerArmJointVisual:scale(0.179, 0.284, 0.200)
+LeftLowerArmJointVisual:translate(0.000, -0.105, 0.000)
 ----------------------------------------
 
---------------------LeftLowerArm--------------------
-LeftLowerArm_mat = gr.material({ 0.105, 1.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
-LeftLowerArm = gr.mesh('cube', 'LeftLowerArm')
-LeftLowerArm:set_material(LeftLowerArm_mat)
-LeftLowerArmJoint:add_child(LeftLowerArm)
-LeftLowerArm:scale(2.194, 0.470, 0.694)
-LeftLowerArm:rotate('x', 324.757)
-LeftLowerArm:rotate('y', -58.513)
-LeftLowerArm:rotate('z', -3.149)
-LeftLowerArm:translate(0.377, -0.045, 0.795)
+--------------------LeftLowerArmVisualItem1--------------------
+LeftLowerArmVisualItem1_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftLowerArmVisualItem1 = gr.mesh('cube', 'LeftLowerArmVisualItem1')
+LeftLowerArmVisualItem1:set_material(LeftLowerArmVisualItem1_mat)
+LeftLowerArmJoint:add_child(LeftLowerArmVisualItem1)
+LeftLowerArmVisualItem1:scale(0.329, 0.494, 0.332)
+LeftLowerArmVisualItem1:translate(0.000, -0.396, 0.000)
 ----------------------------------------
 
-rootNode:translate(0.000, 0.000, -8.000)
+--------------------LeftLowerArmVisualItem2--------------------
+LeftLowerArmVisualItem2_mat = gr.material({ 1.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftLowerArmVisualItem2 = gr.mesh('cube', 'LeftLowerArmVisualItem2')
+LeftLowerArmVisualItem2:set_material(LeftLowerArmVisualItem2_mat)
+LeftLowerArmJoint:add_child(LeftLowerArmVisualItem2)
+LeftLowerArmVisualItem2:scale(0.259, 0.478, 0.231)
+LeftLowerArmVisualItem2:translate(0.000, -0.457, 0.000)
+----------------------------------------
+
+--------------------LeftHand--------------------
+LeftHand = gr.node('LeftHand')
+LeftLowerArmJoint:add_child(LeftHand)
+LeftHand:scale(1.000, 1.000, 1.000)
+LeftHand:translate(0.000, -0.693, 0.000)
+----------------------------------------
+
+--------------------LeftHandJoint--------------------
+LeftHandJoint = gr.joint('LeftHandJoint', { -15.000, 0.000, 15.000 }, { 0.000, 0.000, 0.000 })
+LeftHand:add_child(LeftHandJoint)
+LeftHandJoint:scale(1.000, 1.000, 1.000)
+LeftHandJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftHandJointVisual--------------------
+LeftHandJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandJointVisual = gr.mesh('sphere', 'LeftHandJointVisual')
+LeftHandJointVisual:set_material(LeftHandJointVisual_mat)
+LeftHandJoint:add_child(LeftHandJointVisual)
+LeftHandJointVisual:scale(0.056, 0.059, 0.059)
+LeftHandJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftHandVisualItem1--------------------
+LeftHandVisualItem1_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem1 = gr.mesh('cube', 'LeftHandVisualItem1')
+LeftHandVisualItem1:set_material(LeftHandVisualItem1_mat)
+LeftHandJoint:add_child(LeftHandVisualItem1)
+LeftHandVisualItem1:scale(0.063, 0.073, 0.170)
+LeftHandVisualItem1:translate(0.000, -0.067, 0.000)
+----------------------------------------
+
+--------------------LeftHandVisualItem2--------------------
+LeftHandVisualItem2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem2 = gr.mesh('cube', 'LeftHandVisualItem2')
+LeftHandVisualItem2:set_material(LeftHandVisualItem2_mat)
+LeftHandJoint:add_child(LeftHandVisualItem2)
+LeftHandVisualItem2:scale(0.067, 0.073, 0.190)
+LeftHandVisualItem2:translate(-0.002, -0.130, 0.000)
+----------------------------------------
+
+--------------------LeftHandVisualItem3--------------------
+LeftHandVisualItem3_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem3 = gr.mesh('cube', 'LeftHandVisualItem3')
+LeftHandVisualItem3:set_material(LeftHandVisualItem3_mat)
+LeftHandJoint:add_child(LeftHandVisualItem3)
+LeftHandVisualItem3:scale(0.033, 0.077, 0.039)
+LeftHandVisualItem3:translate(0.012, -0.204, 0.075)
+----------------------------------------
+
+--------------------LeftHandVisualItem3Extend--------------------
+LeftHandVisualItem3Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem3Extend = gr.mesh('cube', 'LeftHandVisualItem3Extend')
+LeftHandVisualItem3Extend:set_material(LeftHandVisualItem3Extend_mat)
+LeftHandJoint:add_child(LeftHandVisualItem3Extend)
+LeftHandVisualItem3Extend:scale(0.033, 0.057, 0.039)
+LeftHandVisualItem3Extend:rotate('z', -19.066)
+LeftHandVisualItem3Extend:translate(0.003, -0.264, 0.075)
+----------------------------------------
+
+--------------------LeftHandVisualItem3Extend2--------------------
+LeftHandVisualItem3Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem3Extend2 = gr.mesh('cube', 'LeftHandVisualItem3Extend2')
+LeftHandVisualItem3Extend2:set_material(LeftHandVisualItem3Extend2_mat)
+LeftHandJoint:add_child(LeftHandVisualItem3Extend2)
+LeftHandVisualItem3Extend2:scale(0.033, 0.047, 0.039)
+LeftHandVisualItem3Extend2:rotate('z', -43.746)
+LeftHandVisualItem3Extend2:translate(-0.019, -0.301, 0.075)
+----------------------------------------
+
+--------------------LeftHandVisualItem4--------------------
+LeftHandVisualItem4_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem4 = gr.mesh('cube', 'LeftHandVisualItem4')
+LeftHandVisualItem4:set_material(LeftHandVisualItem4_mat)
+LeftHandJoint:add_child(LeftHandVisualItem4)
+LeftHandVisualItem4:scale(0.033, 0.077, 0.039)
+LeftHandVisualItem4:translate(0.012, -0.204, 0.022)
+----------------------------------------
+
+--------------------LeftHandVisualItem4Extend--------------------
+LeftHandVisualItem4Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem4Extend = gr.mesh('cube', 'LeftHandVisualItem4Extend')
+LeftHandVisualItem4Extend:set_material(LeftHandVisualItem4Extend_mat)
+LeftHandJoint:add_child(LeftHandVisualItem4Extend)
+LeftHandVisualItem4Extend:scale(0.033, 0.057, 0.039)
+LeftHandVisualItem4Extend:rotate('z', -19.066)
+LeftHandVisualItem4Extend:translate(0.003, -0.264, 0.022)
+----------------------------------------
+
+--------------------LeftHandVisualItem4Extend2--------------------
+LeftHandVisualItem4Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem4Extend2 = gr.mesh('cube', 'LeftHandVisualItem4Extend2')
+LeftHandVisualItem4Extend2:set_material(LeftHandVisualItem4Extend2_mat)
+LeftHandJoint:add_child(LeftHandVisualItem4Extend2)
+LeftHandVisualItem4Extend2:scale(0.033, 0.047, 0.039)
+LeftHandVisualItem4Extend2:rotate('z', -43.746)
+LeftHandVisualItem4Extend2:translate(-0.019, -0.301, 0.022)
+----------------------------------------
+
+--------------------LeftHandVisualItem5--------------------
+LeftHandVisualItem5_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem5 = gr.mesh('cube', 'LeftHandVisualItem5')
+LeftHandVisualItem5:set_material(LeftHandVisualItem5_mat)
+LeftHandJoint:add_child(LeftHandVisualItem5)
+LeftHandVisualItem5:scale(0.033, 0.077, 0.039)
+LeftHandVisualItem5:translate(0.012, -0.204, -0.029)
+----------------------------------------
+
+--------------------LeftHandVisualItem5Extend--------------------
+LeftHandVisualItem5Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem5Extend = gr.mesh('cube', 'LeftHandVisualItem5Extend')
+LeftHandVisualItem5Extend:set_material(LeftHandVisualItem5Extend_mat)
+LeftHandJoint:add_child(LeftHandVisualItem5Extend)
+LeftHandVisualItem5Extend:scale(0.033, 0.057, 0.039)
+LeftHandVisualItem5Extend:rotate('z', -19.066)
+LeftHandVisualItem5Extend:translate(0.003, -0.264, -0.029)
+----------------------------------------
+
+--------------------LeftHandVisualItem5Extend2--------------------
+LeftHandVisualItem5Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem5Extend2 = gr.mesh('cube', 'LeftHandVisualItem5Extend2')
+LeftHandVisualItem5Extend2:set_material(LeftHandVisualItem5Extend2_mat)
+LeftHandJoint:add_child(LeftHandVisualItem5Extend2)
+LeftHandVisualItem5Extend2:scale(0.033, 0.047, 0.039)
+LeftHandVisualItem5Extend2:rotate('z', -43.746)
+LeftHandVisualItem5Extend2:translate(-0.019, -0.301, -0.029)
+----------------------------------------
+
+--------------------LeftHandVisualItem6--------------------
+LeftHandVisualItem6_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem6 = gr.mesh('cube', 'LeftHandVisualItem6')
+LeftHandVisualItem6:set_material(LeftHandVisualItem6_mat)
+LeftHandJoint:add_child(LeftHandVisualItem6)
+LeftHandVisualItem6:scale(0.033, 0.077, 0.039)
+LeftHandVisualItem6:translate(0.012, -0.204, -0.076)
+----------------------------------------
+
+--------------------LeftHandVisualItem6Extend--------------------
+LeftHandVisualItem6Extend_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem6Extend = gr.mesh('cube', 'LeftHandVisualItem6Extend')
+LeftHandVisualItem6Extend:set_material(LeftHandVisualItem6Extend_mat)
+LeftHandJoint:add_child(LeftHandVisualItem6Extend)
+LeftHandVisualItem6Extend:scale(0.033, 0.057, 0.039)
+LeftHandVisualItem6Extend:rotate('z', -19.066)
+LeftHandVisualItem6Extend:translate(0.003, -0.264, -0.076)
+----------------------------------------
+
+--------------------LeftHandVisualItem6Extend2--------------------
+LeftHandVisualItem6Extend2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem6Extend2 = gr.mesh('cube', 'LeftHandVisualItem6Extend2')
+LeftHandVisualItem6Extend2:set_material(LeftHandVisualItem6Extend2_mat)
+LeftHandJoint:add_child(LeftHandVisualItem6Extend2)
+LeftHandVisualItem6Extend2:scale(0.033, 0.047, 0.039)
+LeftHandVisualItem6Extend2:rotate('z', -43.746)
+LeftHandVisualItem6Extend2:translate(-0.019, -0.301, -0.076)
+----------------------------------------
+
+--------------------LeftHandVisualItem7ThumbRoot--------------------
+LeftHandVisualItem7ThumbRoot_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem7ThumbRoot = gr.mesh('cube', 'LeftHandVisualItem7ThumbRoot')
+LeftHandVisualItem7ThumbRoot:set_material(LeftHandVisualItem7ThumbRoot_mat)
+LeftHandJoint:add_child(LeftHandVisualItem7ThumbRoot)
+LeftHandVisualItem7ThumbRoot:scale(0.033, 0.096, 0.039)
+LeftHandVisualItem7ThumbRoot:rotate('x', 312.039)
+LeftHandVisualItem7ThumbRoot:translate(0.003, -0.105, 0.107)
+----------------------------------------
+
+--------------------LeftHandVisualItem7Thumb--------------------
+LeftHandVisualItem7Thumb_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftHandVisualItem7Thumb = gr.mesh('cube', 'LeftHandVisualItem7Thumb')
+LeftHandVisualItem7Thumb:set_material(LeftHandVisualItem7Thumb_mat)
+LeftHandJoint:add_child(LeftHandVisualItem7Thumb)
+LeftHandVisualItem7Thumb:scale(0.033, 0.076, 0.035)
+LeftHandVisualItem7Thumb:rotate('x', 342.652)
+LeftHandVisualItem7Thumb:translate(0.003, -0.164, 0.152)
+----------------------------------------
+
+--------------------Hips--------------------
+Hips = gr.node('Hips')
+Torso:add_child(Hips)
+Hips:scale(1.000, 1.000, 1.000)
+Hips:translate(-0.033, -0.777, 0.203)
+----------------------------------------
+
+--------------------HipsJointNode--------------------
+HipsJointNode = gr.node('HipsJointNode')
+Hips:add_child(HipsJointNode)
+HipsJointNode:scale(1.000, 1.000, 1.000)
+HipsJointNode:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------HipsJoint--------------------
+HipsJoint = gr.joint('HipsJoint', { 0.000, 0.000, 0.000 }, { -15.000, 0.000, 15.000 })
+HipsJointNode:add_child(HipsJoint)
+HipsJoint:scale(1.000, 1.000, 1.000)
+HipsJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------JointNodeVisual--------------------
+JointNodeVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+JointNodeVisual = gr.mesh('cube', 'JointNodeVisual')
+JointNodeVisual:set_material(JointNodeVisual_mat)
+HipsJoint:add_child(JointNodeVisual)
+JointNodeVisual:scale(0.130, 0.200, 0.200)
+JointNodeVisual:rotate('x', 0.019)
+JointNodeVisual:rotate('y', -359.986)
+JointNodeVisual:rotate('z', -89.975)
+JointNodeVisual:translate(-0.031, 0.123, 0.000)
+----------------------------------------
+
+--------------------RotatableItem--------------------
+RotatableItem_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RotatableItem = gr.mesh('cube', 'RotatableItem')
+RotatableItem:set_material(RotatableItem_mat)
+HipsJoint:add_child(RotatableItem)
+RotatableItem:scale(0.290, 1.073, 0.742)
+RotatableItem:rotate('x', 0.019)
+RotatableItem:rotate('y', -359.986)
+RotatableItem:rotate('z', -89.975)
+RotatableItem:translate(-0.031, 0.145, 0.000)
+----------------------------------------
+
+--------------------HipsJointVisualItem2--------------------
+HipsJointVisualItem2_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem2 = gr.mesh('cube', 'HipsJointVisualItem2')
+HipsJointVisualItem2:set_material(HipsJointVisualItem2_mat)
+HipsJoint:add_child(HipsJointVisualItem2)
+HipsJointVisualItem2:scale(0.298, 0.417, 0.114)
+HipsJointVisualItem2:rotate('z', -89.975)
+HipsJointVisualItem2:translate(-0.366, 0.133, 0.418)
+----------------------------------------
+
+--------------------HipsJointVisualItem4--------------------
+HipsJointVisualItem4_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem4 = gr.mesh('cube', 'HipsJointVisualItem4')
+HipsJointVisualItem4:set_material(HipsJointVisualItem4_mat)
+HipsJoint:add_child(HipsJointVisualItem4)
+HipsJointVisualItem4:scale(0.296, 0.419, 0.114)
+HipsJointVisualItem4:rotate('z', -90.000)
+HipsJointVisualItem4:translate(0.311, 0.132, 0.418)
+----------------------------------------
+
+--------------------HipsJointVisualItem5--------------------
+HipsJointVisualItem5_mat = gr.material({ 1.000, 1.000, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem5 = gr.mesh('cube', 'HipsJointVisualItem5')
+HipsJointVisualItem5:set_material(HipsJointVisualItem5_mat)
+HipsJoint:add_child(HipsJointVisualItem5)
+HipsJointVisualItem5:scale(0.192, 0.255, 0.114)
+HipsJointVisualItem5:rotate('z', -89.974)
+HipsJointVisualItem5:translate(0.239, 0.036, 0.450)
+----------------------------------------
+
+--------------------HipsJointVisualItem3--------------------
+HipsJointVisualItem3_mat = gr.material({ 1.000, 1.000, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem3 = gr.mesh('cube', 'HipsJointVisualItem3')
+HipsJointVisualItem3:set_material(HipsJointVisualItem3_mat)
+HipsJoint:add_child(HipsJointVisualItem3)
+HipsJointVisualItem3:scale(0.186, 0.265, 0.114)
+HipsJointVisualItem3:rotate('z', -89.974)
+HipsJointVisualItem3:translate(-0.292, 0.043, 0.450)
+----------------------------------------
+
+--------------------HipsJointVisualItem--------------------
+HipsJointVisualItem_mat = gr.material({ 0.689, 0.689, 0.689 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem = gr.mesh('cube', 'HipsJointVisualItem')
+HipsJointVisualItem:set_material(HipsJointVisualItem_mat)
+HipsJoint:add_child(HipsJointVisualItem)
+HipsJointVisualItem:scale(0.318, 0.274, 0.887)
+HipsJointVisualItem:rotate('x', 0.019)
+HipsJointVisualItem:rotate('y', -359.986)
+HipsJointVisualItem:rotate('z', -89.975)
+HipsJointVisualItem:translate(-0.028, 0.091, 0.018)
+----------------------------------------
+
+--------------------HipsJointVisualItem6--------------------
+HipsJointVisualItem6_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem6 = gr.mesh('cube', 'HipsJointVisualItem6')
+HipsJointVisualItem6:set_material(HipsJointVisualItem6_mat)
+HipsJoint:add_child(HipsJointVisualItem6)
+HipsJointVisualItem6:scale(0.385, 0.387, 0.128)
+HipsJointVisualItem6:rotate('z', -89.975)
+HipsJointVisualItem6:translate(0.318, 0.076, -0.396)
+----------------------------------------
+
+--------------------HipsJointVisualItem8--------------------
+HipsJointVisualItem8_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem8 = gr.mesh('cube', 'HipsJointVisualItem8')
+HipsJointVisualItem8:set_material(HipsJointVisualItem8_mat)
+HipsJoint:add_child(HipsJointVisualItem8)
+HipsJointVisualItem8:scale(0.155, 0.313, 0.128)
+HipsJointVisualItem8:rotate('z', -89.973)
+HipsJointVisualItem8:translate(0.281, -0.114, -0.428)
+----------------------------------------
+
+--------------------HipsJointVisualItem7--------------------
+HipsJointVisualItem7_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem7 = gr.mesh('cube', 'HipsJointVisualItem7')
+HipsJointVisualItem7:set_material(HipsJointVisualItem7_mat)
+HipsJoint:add_child(HipsJointVisualItem7)
+HipsJointVisualItem7:scale(0.383, 0.387, 0.128)
+HipsJointVisualItem7:rotate('z', -89.975)
+HipsJointVisualItem7:translate(-0.360, 0.078, -0.400)
+----------------------------------------
+
+--------------------HipsJointVisualItem9--------------------
+HipsJointVisualItem9_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+HipsJointVisualItem9 = gr.mesh('cube', 'HipsJointVisualItem9')
+HipsJointVisualItem9:set_material(HipsJointVisualItem9_mat)
+HipsJoint:add_child(HipsJointVisualItem9)
+HipsJointVisualItem9:scale(0.170, 0.326, 0.128)
+HipsJointVisualItem9:rotate('z', -89.973)
+HipsJointVisualItem9:translate(-0.330, -0.109, -0.427)
+----------------------------------------
+
+--------------------SidePack--------------------
+SidePack_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+SidePack = gr.mesh('cube', 'SidePack')
+SidePack:set_material(SidePack_mat)
+HipsJoint:add_child(SidePack)
+SidePack:scale(0.326, 0.172, 0.420)
+SidePack:rotate('z', -81.071)
+SidePack:translate(-0.625, 0.136, 0.000)
+----------------------------------------
+
+--------------------SidePack2--------------------
+SidePack2_mat = gr.material({ 0.500, 0.500, 0.500 }, { 0.1, 0.1, 0.1 }, 10)
+SidePack2 = gr.mesh('cube', 'SidePack2')
+SidePack2:set_material(SidePack2_mat)
+HipsJoint:add_child(SidePack2)
+SidePack2:scale(0.326, 0.137, 0.420)
+SidePack2:rotate('z', -99.293)
+SidePack2:translate(0.556, 0.119, 0.000)
+----------------------------------------
+
+--------------------RightThigh--------------------
+RightThigh = gr.node('RightThigh')
+HipsJoint:add_child(RightThigh)
+RightThigh:scale(1.000, 1.000, 1.000)
+RightThigh:translate(-0.301, -0.066, -0.029)
+----------------------------------------
+
+--------------------RightThighJoint--------------------
+RightThighJoint = gr.joint('RightThighJoint', { -25.000, 0.000, 25.000 }, { 0.000, 0.000, 0.000 })
+RightThigh:add_child(RightThighJoint)
+RightThighJoint:scale(1.000, 1.000, 1.000)
+RightThighJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightThighJointVisual--------------------
+RightThighJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightThighJointVisual = gr.mesh('cube', 'RightThighJointVisual')
+RightThighJointVisual:set_material(RightThighJointVisual_mat)
+RightThighJoint:add_child(RightThighJointVisual)
+RightThighJointVisual:scale(0.400, 0.200, 0.200)
+RightThighJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightThighVisual--------------------
+RightThighVisual_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightThighVisual = gr.mesh('cube', 'RightThighVisual')
+RightThighVisual:set_material(RightThighVisual_mat)
+RightThighJoint:add_child(RightThighVisual)
+RightThighVisual:scale(0.321, 0.468, 0.439)
+RightThighVisual:rotate('x', 90.000)
+RightThighVisual:translate(0.000, -0.258, 0.015)
+----------------------------------------
+
+--------------------RightThighConnector--------------------
+RightThighConnector_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightThighConnector = gr.mesh('cube', 'RightThighConnector')
+RightThighConnector:set_material(RightThighConnector_mat)
+RightThighJoint:add_child(RightThighConnector)
+RightThighConnector:scale(0.105, 0.147, 0.468)
+RightThighConnector:translate(0.101, -0.503, 0.015)
+----------------------------------------
+
+--------------------RightThighConnector2--------------------
+RightThighConnector2_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightThighConnector2 = gr.mesh('cube', 'RightThighConnector2')
+RightThighConnector2:set_material(RightThighConnector2_mat)
+RightThighJoint:add_child(RightThighConnector2)
+RightThighConnector2:scale(0.105, 0.147, 0.468)
+RightThighConnector2:translate(-0.106, -0.503, 0.015)
+----------------------------------------
+
+--------------------RightCalf--------------------
+RightCalf = gr.node('RightCalf')
+RightThighJoint:add_child(RightCalf)
+RightCalf:scale(1.000, 1.000, 1.000)
+RightCalf:translate(0.004, -0.584, 0.000)
+----------------------------------------
+
+--------------------RightCalfJoint--------------------
+RightCalfJoint = gr.joint('RightCalfJoint', { -20.000, 0.000, 20.000 }, { 0.000, 0.000, 0.000 })
+RightCalf:add_child(RightCalfJoint)
+RightCalfJoint:scale(1.000, 1.000, 1.000)
+RightCalfJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightCalfJointVisual--------------------
+RightCalfJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfJointVisual = gr.mesh('cube', 'RightCalfJointVisual')
+RightCalfJointVisual:set_material(RightCalfJointVisual_mat)
+RightCalfJoint:add_child(RightCalfJointVisual)
+RightCalfJointVisual:scale(0.188, 0.219, 0.200)
+RightCalfJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightCalfVisualItem1--------------------
+RightCalfVisualItem1_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem1 = gr.mesh('cube', 'RightCalfVisualItem1')
+RightCalfVisualItem1:set_material(RightCalfVisualItem1_mat)
+RightCalfJoint:add_child(RightCalfVisualItem1)
+RightCalfVisualItem1:scale(0.404, 0.751, 0.542)
+RightCalfVisualItem1:translate(0.000, -0.465, 0.005)
+----------------------------------------
+
+--------------------RightCalfVisualItem3--------------------
+RightCalfVisualItem3_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem3 = gr.mesh('cube', 'RightCalfVisualItem3')
+RightCalfVisualItem3:set_material(RightCalfVisualItem3_mat)
+RightCalfJoint:add_child(RightCalfVisualItem3)
+RightCalfVisualItem3:scale(0.070, 0.363, 0.130)
+RightCalfVisualItem3:rotate('x', 1.371)
+RightCalfVisualItem3:translate(-0.161, -0.687, 0.310)
+----------------------------------------
+
+--------------------RightCalfVisualItem5--------------------
+RightCalfVisualItem5_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem5 = gr.mesh('cube', 'RightCalfVisualItem5')
+RightCalfVisualItem5:set_material(RightCalfVisualItem5_mat)
+RightCalfJoint:add_child(RightCalfVisualItem5)
+RightCalfVisualItem5:scale(0.070, 0.302, 0.435)
+RightCalfVisualItem5:rotate('x', 1.371)
+RightCalfVisualItem5:rotate('z', -13.075)
+RightCalfVisualItem5:translate(-0.208, -0.803, 0.000)
+----------------------------------------
+
+--------------------RightCalfVisualItem4--------------------
+RightCalfVisualItem4_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem4 = gr.mesh('cube', 'RightCalfVisualItem4')
+RightCalfVisualItem4:set_material(RightCalfVisualItem4_mat)
+RightCalfJoint:add_child(RightCalfVisualItem4)
+RightCalfVisualItem4:scale(0.070, 0.350, 0.130)
+RightCalfVisualItem4:rotate('x', 1.032)
+RightCalfVisualItem4:translate(0.153, -0.681, 0.306)
+----------------------------------------
+
+--------------------RightCalfVisualItem6--------------------
+RightCalfVisualItem6_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem6 = gr.mesh('cube', 'RightCalfVisualItem6')
+RightCalfVisualItem6:set_material(RightCalfVisualItem6_mat)
+RightCalfJoint:add_child(RightCalfVisualItem6)
+RightCalfVisualItem6:scale(0.070, 0.281, 0.564)
+RightCalfVisualItem6:rotate('x', 1.032)
+RightCalfVisualItem6:rotate('z', -348.347)
+RightCalfVisualItem6:translate(0.178, -0.801, 0.018)
+----------------------------------------
+
+--------------------RightCalfVisualItem2--------------------
+RightCalfVisualItem2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem2 = gr.mesh('cube', 'RightCalfVisualItem2')
+RightCalfVisualItem2:set_material(RightCalfVisualItem2_mat)
+RightCalfJoint:add_child(RightCalfVisualItem2)
+RightCalfVisualItem2:scale(0.386, 0.299, 0.130)
+RightCalfVisualItem2:rotate('x', 338.173)
+RightCalfVisualItem2:translate(-0.005, -0.397, 0.261)
+----------------------------------------
+
+--------------------RightCalfVisualItem13--------------------
+RightCalfVisualItem13_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem13 = gr.mesh('cube', 'RightCalfVisualItem13')
+RightCalfVisualItem13:set_material(RightCalfVisualItem13_mat)
+RightCalfJoint:add_child(RightCalfVisualItem13)
+RightCalfVisualItem13:scale(0.383, 0.299, 0.092)
+RightCalfVisualItem13:rotate('x', 12.786)
+RightCalfVisualItem13:translate(-0.005, -0.117, 0.317)
+----------------------------------------
+
+--------------------RightCalfVisualItem7--------------------
+RightCalfVisualItem7_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem7 = gr.mesh('cube', 'RightCalfVisualItem7')
+RightCalfVisualItem7:set_material(RightCalfVisualItem7_mat)
+RightCalfJoint:add_child(RightCalfVisualItem7)
+RightCalfVisualItem7:scale(0.302, 0.013, 0.267)
+RightCalfVisualItem7:translate(0.006, -0.783, 0.217)
+----------------------------------------
+
+--------------------RightCalfVisualItem10--------------------
+RightCalfVisualItem10_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem10 = gr.mesh('cube', 'RightCalfVisualItem10')
+RightCalfVisualItem10:set_material(RightCalfVisualItem10_mat)
+RightCalfJoint:add_child(RightCalfVisualItem10)
+RightCalfVisualItem10:scale(0.302, 0.013, 0.267)
+RightCalfVisualItem10:translate(0.006, -0.670, 0.217)
+----------------------------------------
+
+--------------------RightCalfVisualItem8--------------------
+RightCalfVisualItem8_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem8 = gr.mesh('cube', 'RightCalfVisualItem8')
+RightCalfVisualItem8:set_material(RightCalfVisualItem8_mat)
+RightCalfJoint:add_child(RightCalfVisualItem8)
+RightCalfVisualItem8:scale(0.302, 0.013, 0.267)
+RightCalfVisualItem8:translate(0.006, -0.831, 0.217)
+----------------------------------------
+
+--------------------RightCalfVisualItem9--------------------
+RightCalfVisualItem9_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem9 = gr.mesh('cube', 'RightCalfVisualItem9')
+RightCalfVisualItem9:set_material(RightCalfVisualItem9_mat)
+RightCalfJoint:add_child(RightCalfVisualItem9)
+RightCalfVisualItem9:scale(0.302, 0.013, 0.267)
+RightCalfVisualItem9:translate(0.006, -0.730, 0.217)
+----------------------------------------
+
+--------------------RightCalfVisualItem11--------------------
+RightCalfVisualItem11_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem11 = gr.mesh('cube', 'RightCalfVisualItem11')
+RightCalfVisualItem11:set_material(RightCalfVisualItem11_mat)
+RightCalfJoint:add_child(RightCalfVisualItem11)
+RightCalfVisualItem11:scale(0.302, 0.013, 0.267)
+RightCalfVisualItem11:translate(0.006, -0.617, 0.217)
+----------------------------------------
+
+--------------------RightCalfVisualItem12--------------------
+RightCalfVisualItem12_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightCalfVisualItem12 = gr.mesh('cube', 'RightCalfVisualItem12')
+RightCalfVisualItem12:set_material(RightCalfVisualItem12_mat)
+RightCalfJoint:add_child(RightCalfVisualItem12)
+RightCalfVisualItem12:scale(0.302, 0.013, 0.267)
+RightCalfVisualItem12:translate(0.006, -0.570, 0.217)
+----------------------------------------
+
+--------------------RightFoot--------------------
+RightFoot = gr.node('RightFoot')
+RightCalfJoint:add_child(RightFoot)
+RightFoot:scale(1.000, 1.000, 1.000)
+RightFoot:translate(0.000, -0.897, 0.000)
+----------------------------------------
+
+--------------------RightFootJoint--------------------
+RightFootJoint = gr.joint('RightFootJoint', { -10.000, 0.000, 10.000 }, { 0.000, 0.000, 0.000 })
+RightFoot:add_child(RightFootJoint)
+RightFootJoint:scale(1.000, 1.000, 1.000)
+RightFootJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightFootJointVisual--------------------
+RightFootJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootJointVisual = gr.mesh('cube', 'RightFootJointVisual')
+RightFootJointVisual:set_material(RightFootJointVisual_mat)
+RightFootJoint:add_child(RightFootJointVisual)
+RightFootJointVisual:scale(0.448, 0.106, 0.200)
+RightFootJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightFootVisualItem1--------------------
+RightFootVisualItem1_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem1 = gr.mesh('cube', 'RightFootVisualItem1')
+RightFootVisualItem1:set_material(RightFootVisualItem1_mat)
+RightFootJoint:add_child(RightFootVisualItem1)
+RightFootVisualItem1:scale(0.248, 0.163, 0.695)
+RightFootVisualItem1:translate(0.000, -0.089, 0.070)
+----------------------------------------
+
+--------------------RightFootVisualItem2--------------------
+RightFootVisualItem2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem2 = gr.mesh('cube', 'RightFootVisualItem2')
+RightFootVisualItem2:set_material(RightFootVisualItem2_mat)
+RightFootJoint:add_child(RightFootVisualItem2)
+RightFootVisualItem2:scale(0.285, 0.178, 0.105)
+RightFootVisualItem2:rotate('x', 314.863)
+RightFootVisualItem2:translate(0.000, -0.044, 0.470)
+----------------------------------------
+
+--------------------RightFootVisualItem7--------------------
+RightFootVisualItem7_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem7 = gr.mesh('cube', 'RightFootVisualItem7')
+RightFootVisualItem7:set_material(RightFootVisualItem7_mat)
+RightFootJoint:add_child(RightFootVisualItem7)
+RightFootVisualItem7:scale(0.285, 0.178, 0.105)
+RightFootVisualItem7:rotate('x', 293.593)
+RightFootVisualItem7:translate(0.000, -0.112, 0.578)
+----------------------------------------
+
+--------------------RightFootVisualItem3--------------------
+RightFootVisualItem3_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem3 = gr.mesh('cube', 'RightFootVisualItem3')
+RightFootVisualItem3:set_material(RightFootVisualItem3_mat)
+RightFootJoint:add_child(RightFootVisualItem3)
+RightFootVisualItem3:scale(0.251, 0.134, 0.391)
+RightFootVisualItem3:translate(0.000, -0.167, 0.533)
+----------------------------------------
+
+--------------------RightFootVisualItem4--------------------
+RightFootVisualItem4_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem4 = gr.mesh('cube', 'RightFootVisualItem4')
+RightFootVisualItem4:set_material(RightFootVisualItem4_mat)
+RightFootJoint:add_child(RightFootVisualItem4)
+RightFootVisualItem4:scale(0.367, 0.177, 0.312)
+RightFootVisualItem4:translate(0.006, -0.147, 0.398)
+----------------------------------------
+
+--------------------RightFootVisualItem6--------------------
+RightFootVisualItem6_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem6 = gr.mesh('cube', 'RightFootVisualItem6')
+RightFootVisualItem6:set_material(RightFootVisualItem6_mat)
+RightFootJoint:add_child(RightFootVisualItem6)
+RightFootVisualItem6:scale(0.433, 0.177, 0.180)
+RightFootVisualItem6:rotate('x', 314.318)
+RightFootVisualItem6:translate(0.011, -0.094, 0.382)
+----------------------------------------
+
+--------------------RightFootVisualItem5--------------------
+RightFootVisualItem5_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem5 = gr.mesh('cube', 'RightFootVisualItem5')
+RightFootVisualItem5:set_material(RightFootVisualItem5_mat)
+RightFootJoint:add_child(RightFootVisualItem5)
+RightFootVisualItem5:scale(0.361, 0.160, 0.218)
+RightFootVisualItem5:translate(0.009, -0.172, -0.211)
+----------------------------------------
+
+--------------------RightFootVisualItem8--------------------
+RightFootVisualItem8_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem8 = gr.mesh('cube', 'RightFootVisualItem8')
+RightFootVisualItem8:set_material(RightFootVisualItem8_mat)
+RightFootJoint:add_child(RightFootVisualItem8)
+RightFootVisualItem8:scale(0.361, 0.122, 0.076)
+RightFootVisualItem8:rotate('x', 22.694)
+RightFootVisualItem8:translate(0.009, -0.132, -0.322)
+----------------------------------------
+
+--------------------RightFootVisualItem9--------------------
+RightFootVisualItem9_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+RightFootVisualItem9 = gr.mesh('cube', 'RightFootVisualItem9')
+RightFootVisualItem9:set_material(RightFootVisualItem9_mat)
+RightFootJoint:add_child(RightFootVisualItem9)
+RightFootVisualItem9:scale(0.361, 0.085, 0.076)
+RightFootVisualItem9:translate(0.009, -0.214, -0.343)
+----------------------------------------
+
+--------------------LeftThigh--------------------
+LeftThigh = gr.node('LeftThigh')
+HipsJoint:add_child(LeftThigh)
+LeftThigh:scale(1.000, 1.000, 1.000)
+LeftThigh:translate(0.283, -0.068, -0.029)
+----------------------------------------
+
+--------------------RightThighJoint--------------------
+RightThighJoint = gr.joint('RightThighJoint', { -25.000, 0.000, 25.000 }, { 0.000, 0.000, 0.000 })
+LeftThigh:add_child(RightThighJoint)
+RightThighJoint:scale(1.000, 1.000, 1.000)
+RightThighJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightThighJointVisual--------------------
+RightThighJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+RightThighJointVisual = gr.mesh('cube', 'RightThighJointVisual')
+RightThighJointVisual:set_material(RightThighJointVisual_mat)
+RightThighJoint:add_child(RightThighJointVisual)
+RightThighJointVisual:scale(0.400, 0.200, 0.200)
+RightThighJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------RightThighVisual--------------------
+RightThighVisual_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+RightThighVisual = gr.mesh('cube', 'RightThighVisual')
+RightThighVisual:set_material(RightThighVisual_mat)
+RightThighJoint:add_child(RightThighVisual)
+RightThighVisual:scale(0.321, 0.468, 0.439)
+RightThighVisual:rotate('x', 89.941)
+RightThighVisual:rotate('y', -359.973)
+RightThighVisual:translate(0.000, -0.258, 0.015)
+----------------------------------------
+
+--------------------LeftThighConnector--------------------
+LeftThighConnector_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftThighConnector = gr.mesh('cube', 'LeftThighConnector')
+LeftThighConnector:set_material(LeftThighConnector_mat)
+RightThighJoint:add_child(LeftThighConnector)
+LeftThighConnector:scale(0.105, 0.147, 0.468)
+LeftThighConnector:translate(0.108, -0.501, 0.015)
+----------------------------------------
+
+--------------------LeftThighConnector2--------------------
+LeftThighConnector2_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftThighConnector2 = gr.mesh('cube', 'LeftThighConnector2')
+LeftThighConnector2:set_material(LeftThighConnector2_mat)
+RightThighJoint:add_child(LeftThighConnector2)
+LeftThighConnector2:scale(0.105, 0.147, 0.468)
+LeftThighConnector2:translate(-0.108, -0.501, 0.015)
+----------------------------------------
+
+--------------------LeftCalf--------------------
+LeftCalf = gr.node('LeftCalf')
+RightThighJoint:add_child(LeftCalf)
+LeftCalf:scale(1.000, 1.000, 1.000)
+LeftCalf:translate(-0.004, -0.579, 0.000)
+----------------------------------------
+
+--------------------LeftCalfJoint--------------------
+LeftCalfJoint = gr.joint('LeftCalfJoint', { -20.000, 0.000, 20.000 }, { 0.000, 0.000, 0.000 })
+LeftCalf:add_child(LeftCalfJoint)
+LeftCalfJoint:scale(1.000, 1.000, 1.000)
+LeftCalfJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftCalfJointVisual--------------------
+LeftCalfJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfJointVisual = gr.mesh('cube', 'LeftCalfJointVisual')
+LeftCalfJointVisual:set_material(LeftCalfJointVisual_mat)
+LeftCalfJoint:add_child(LeftCalfJointVisual)
+LeftCalfJointVisual:scale(0.188, 0.219, 0.200)
+LeftCalfJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftCalfVisualItem1--------------------
+LeftCalfVisualItem1_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem1 = gr.mesh('cube', 'LeftCalfVisualItem1')
+LeftCalfVisualItem1:set_material(LeftCalfVisualItem1_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem1)
+LeftCalfVisualItem1:scale(0.404, 0.751, 0.542)
+LeftCalfVisualItem1:translate(0.000, -0.465, 0.005)
+----------------------------------------
+
+--------------------LeftCalfVisualItem3--------------------
+LeftCalfVisualItem3_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem3 = gr.mesh('cube', 'LeftCalfVisualItem3')
+LeftCalfVisualItem3:set_material(LeftCalfVisualItem3_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem3)
+LeftCalfVisualItem3:scale(0.070, 0.343, 0.130)
+LeftCalfVisualItem3:rotate('x', 1.371)
+LeftCalfVisualItem3:translate(-0.155, -0.677, 0.310)
+----------------------------------------
+
+--------------------LeftCalfVisualItem5--------------------
+LeftCalfVisualItem5_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem5 = gr.mesh('cube', 'LeftCalfVisualItem5')
+LeftCalfVisualItem5:set_material(LeftCalfVisualItem5_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem5)
+LeftCalfVisualItem5:scale(0.070, 0.324, 0.435)
+LeftCalfVisualItem5:rotate('x', 1.371)
+LeftCalfVisualItem5:rotate('z', -342.594)
+LeftCalfVisualItem5:translate(0.218, -0.801, 0.000)
+----------------------------------------
+
+--------------------LeftCalfVisualItem4--------------------
+LeftCalfVisualItem4_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem4 = gr.mesh('cube', 'LeftCalfVisualItem4')
+LeftCalfVisualItem4:set_material(LeftCalfVisualItem4_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem4)
+LeftCalfVisualItem4:scale(0.070, 0.347, 0.130)
+LeftCalfVisualItem4:rotate('x', 1.032)
+LeftCalfVisualItem4:translate(0.159, -0.679, 0.306)
+----------------------------------------
+
+--------------------LeftCalfVisualItem2--------------------
+LeftCalfVisualItem2_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem2 = gr.mesh('cube', 'LeftCalfVisualItem2')
+LeftCalfVisualItem2:set_material(LeftCalfVisualItem2_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem2)
+LeftCalfVisualItem2:scale(0.386, 0.299, 0.130)
+LeftCalfVisualItem2:rotate('x', 338.173)
+LeftCalfVisualItem2:translate(0.001, -0.397, 0.261)
+----------------------------------------
+
+--------------------LeftCalfVisualItem6--------------------
+LeftCalfVisualItem6_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem6 = gr.mesh('cube', 'LeftCalfVisualItem6')
+LeftCalfVisualItem6:set_material(LeftCalfVisualItem6_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem6)
+LeftCalfVisualItem6:scale(0.070, 0.219, 0.564)
+LeftCalfVisualItem6:rotate('x', 2.821)
+LeftCalfVisualItem6:rotate('y', -358.761)
+LeftCalfVisualItem6:rotate('z', -15.380)
+LeftCalfVisualItem6:translate(-0.184, -0.833, 0.009)
+----------------------------------------
+
+--------------------LeftCalfVisualItem7--------------------
+LeftCalfVisualItem7_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem7 = gr.mesh('cube', 'LeftCalfVisualItem7')
+LeftCalfVisualItem7:set_material(LeftCalfVisualItem7_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem7)
+LeftCalfVisualItem7:scale(0.302, 0.013, 0.267)
+LeftCalfVisualItem7:translate(0.000, -0.783, 0.217)
+----------------------------------------
+
+--------------------LeftCalfVisualItem10--------------------
+LeftCalfVisualItem10_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem10 = gr.mesh('cube', 'LeftCalfVisualItem10')
+LeftCalfVisualItem10:set_material(LeftCalfVisualItem10_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem10)
+LeftCalfVisualItem10:scale(0.302, 0.013, 0.267)
+LeftCalfVisualItem10:translate(0.000, -0.670, 0.217)
+----------------------------------------
+
+--------------------LeftCalfVisualItem8--------------------
+LeftCalfVisualItem8_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem8 = gr.mesh('cube', 'LeftCalfVisualItem8')
+LeftCalfVisualItem8:set_material(LeftCalfVisualItem8_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem8)
+LeftCalfVisualItem8:scale(0.302, 0.013, 0.267)
+LeftCalfVisualItem8:translate(0.000, -0.831, 0.217)
+----------------------------------------
+
+--------------------LeftCalfVisualItem9--------------------
+LeftCalfVisualItem9_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem9 = gr.mesh('cube', 'LeftCalfVisualItem9')
+LeftCalfVisualItem9:set_material(LeftCalfVisualItem9_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem9)
+LeftCalfVisualItem9:scale(0.302, 0.013, 0.267)
+LeftCalfVisualItem9:translate(0.000, -0.730, 0.217)
+----------------------------------------
+
+--------------------LeftCalfVisualItem11--------------------
+LeftCalfVisualItem11_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem11 = gr.mesh('cube', 'LeftCalfVisualItem11')
+LeftCalfVisualItem11:set_material(LeftCalfVisualItem11_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem11)
+LeftCalfVisualItem11:scale(0.302, 0.013, 0.267)
+LeftCalfVisualItem11:translate(0.000, -0.617, 0.217)
+----------------------------------------
+
+--------------------LeftCalfVisualItem12--------------------
+LeftCalfVisualItem12_mat = gr.material({ 0.910, 0.910, 0.910 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem12 = gr.mesh('cube', 'LeftCalfVisualItem12')
+LeftCalfVisualItem12:set_material(LeftCalfVisualItem12_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem12)
+LeftCalfVisualItem12:scale(0.302, 0.013, 0.267)
+LeftCalfVisualItem12:translate(0.000, -0.570, 0.217)
+----------------------------------------
+
+--------------------LeftCalfVisualItem13--------------------
+LeftCalfVisualItem13_mat = gr.material({ 0.000, 0.314, 1.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftCalfVisualItem13 = gr.mesh('cube', 'LeftCalfVisualItem13')
+LeftCalfVisualItem13:set_material(LeftCalfVisualItem13_mat)
+LeftCalfJoint:add_child(LeftCalfVisualItem13)
+LeftCalfVisualItem13:scale(0.383, 0.299, 0.092)
+LeftCalfVisualItem13:rotate('x', 12.786)
+LeftCalfVisualItem13:translate(0.000, -0.120, 0.317)
+----------------------------------------
+
+--------------------LeftFoot--------------------
+LeftFoot = gr.node('LeftFoot')
+LeftCalfJoint:add_child(LeftFoot)
+LeftFoot:scale(1.000, 1.000, 1.000)
+LeftFoot:translate(0.026, -0.897, 0.000)
+----------------------------------------
+
+--------------------LeftFootJoint--------------------
+LeftFootJoint = gr.joint('LeftFootJoint', { -10.000, 0.000, 10.000 }, { 0.000, 0.000, 0.000 })
+LeftFoot:add_child(LeftFootJoint)
+LeftFootJoint:scale(1.000, 1.000, 1.000)
+LeftFootJoint:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftFootJointVisual--------------------
+LeftFootJointVisual_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootJointVisual = gr.mesh('cube', 'LeftFootJointVisual')
+LeftFootJointVisual:set_material(LeftFootJointVisual_mat)
+LeftFootJoint:add_child(LeftFootJointVisual)
+LeftFootJointVisual:scale(0.448, 0.106, 0.200)
+LeftFootJointVisual:translate(0.000, 0.000, 0.000)
+----------------------------------------
+
+--------------------LeftFootVisualItem1--------------------
+LeftFootVisualItem1_mat = gr.material({ 0.000, 0.000, 0.000 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem1 = gr.mesh('cube', 'LeftFootVisualItem1')
+LeftFootVisualItem1:set_material(LeftFootVisualItem1_mat)
+LeftFootJoint:add_child(LeftFootVisualItem1)
+LeftFootVisualItem1:scale(0.248, 0.163, 0.695)
+LeftFootVisualItem1:translate(0.000, -0.089, 0.070)
+----------------------------------------
+
+--------------------LeftFootVisualItem2--------------------
+LeftFootVisualItem2_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem2 = gr.mesh('cube', 'LeftFootVisualItem2')
+LeftFootVisualItem2:set_material(LeftFootVisualItem2_mat)
+LeftFootJoint:add_child(LeftFootVisualItem2)
+LeftFootVisualItem2:scale(0.285, 0.178, 0.105)
+LeftFootVisualItem2:rotate('x', 314.863)
+LeftFootVisualItem2:translate(0.000, -0.044, 0.470)
+----------------------------------------
+
+--------------------LeftFootVisualItem7--------------------
+LeftFootVisualItem7_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem7 = gr.mesh('cube', 'LeftFootVisualItem7')
+LeftFootVisualItem7:set_material(LeftFootVisualItem7_mat)
+LeftFootJoint:add_child(LeftFootVisualItem7)
+LeftFootVisualItem7:scale(0.285, 0.178, 0.105)
+LeftFootVisualItem7:rotate('x', 293.593)
+LeftFootVisualItem7:translate(0.000, -0.112, 0.578)
+----------------------------------------
+
+--------------------LeftFootVisualItem3--------------------
+LeftFootVisualItem3_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem3 = gr.mesh('cube', 'LeftFootVisualItem3')
+LeftFootVisualItem3:set_material(LeftFootVisualItem3_mat)
+LeftFootJoint:add_child(LeftFootVisualItem3)
+LeftFootVisualItem3:scale(0.251, 0.134, 0.391)
+LeftFootVisualItem3:translate(0.000, -0.167, 0.533)
+----------------------------------------
+
+--------------------LeftFootVisualItem4--------------------
+LeftFootVisualItem4_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem4 = gr.mesh('cube', 'LeftFootVisualItem4')
+LeftFootVisualItem4:set_material(LeftFootVisualItem4_mat)
+LeftFootJoint:add_child(LeftFootVisualItem4)
+LeftFootVisualItem4:scale(0.367, 0.177, 0.312)
+LeftFootVisualItem4:translate(0.006, -0.147, 0.398)
+----------------------------------------
+
+--------------------LeftFootVisualItem6--------------------
+LeftFootVisualItem6_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem6 = gr.mesh('cube', 'LeftFootVisualItem6')
+LeftFootVisualItem6:set_material(LeftFootVisualItem6_mat)
+LeftFootJoint:add_child(LeftFootVisualItem6)
+LeftFootVisualItem6:scale(0.433, 0.177, 0.180)
+LeftFootVisualItem6:rotate('x', 314.318)
+LeftFootVisualItem6:translate(0.011, -0.094, 0.382)
+----------------------------------------
+
+--------------------LeftFootVisualItem5--------------------
+LeftFootVisualItem5_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem5 = gr.mesh('cube', 'LeftFootVisualItem5')
+LeftFootVisualItem5:set_material(LeftFootVisualItem5_mat)
+LeftFootJoint:add_child(LeftFootVisualItem5)
+LeftFootVisualItem5:scale(0.361, 0.160, 0.218)
+LeftFootVisualItem5:translate(0.009, -0.172, -0.211)
+----------------------------------------
+
+--------------------LeftFootVisualItem8--------------------
+LeftFootVisualItem8_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem8 = gr.mesh('cube', 'LeftFootVisualItem8')
+LeftFootVisualItem8:set_material(LeftFootVisualItem8_mat)
+LeftFootJoint:add_child(LeftFootVisualItem8)
+LeftFootVisualItem8:scale(0.361, 0.122, 0.076)
+LeftFootVisualItem8:rotate('x', 22.694)
+LeftFootVisualItem8:translate(0.009, -0.132, -0.322)
+----------------------------------------
+
+--------------------LeftFootVisualItem9--------------------
+LeftFootVisualItem9_mat = gr.material({ 0.013, 0.015, 0.387 }, { 0.1, 0.1, 0.1 }, 10)
+LeftFootVisualItem9 = gr.mesh('cube', 'LeftFootVisualItem9')
+LeftFootVisualItem9:set_material(LeftFootVisualItem9_mat)
+LeftFootJoint:add_child(LeftFootVisualItem9)
+LeftFootVisualItem9:scale(0.361, 0.085, 0.076)
+LeftFootVisualItem9:translate(0.009, -0.214, -0.343)
+----------------------------------------
+
+rootNode:translate(0.000, 0.000, -4.500)
 
 return rootNode
 

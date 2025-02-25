@@ -1,0 +1,52 @@
+└── TestRoot
+    └── Torso
+        ├── (related geometry)
+        ├── Shoulders
+        │   ├── (related geometry)
+        │   ├── Neck
+        │   │   └── NeckJoint
+        │   │       ├── (related geometry)
+        │   │       └── Head
+        │   │           └── NeckToHeadJoint
+        │   │               └── (related geometry)
+        │   ├── RightUpperArm
+        │   │   └── RightUpperArmJoint
+        │   │       ├── (related geometry)
+        │   │       └── RightLowerArm
+        │   │           └── RightLowerArmJoint
+        │   │               ├── (related geometry)
+        │   │               └── RightHand
+        │   │                   └── RightHandJoint
+        │   │                       └── (related geometry)
+        │   └── LeftUpperArm
+        │       └── LeftUpperArmJoint
+        │           ├── (related geometry)
+        │           └── LeftLowerArm
+        │               └── LeftLowerArmJoint
+        │                   ├── (related geometry)
+        │                   └── LeftHand
+        │                       └── LeftHandJoint
+        │                           └── (related geometry)
+        └── Hips
+            └── HipsJointNode
+                └── HipsJoint
+                    ├── (related geometry)
+                    ├── RightThigh
+                    │   └── RightThighJoint
+                    │       ├── (related geometry)
+                    │       └── RightCalf
+                    │           └── RightCalfJoint
+                    │               ├── (related geometry)
+                    │               └── RightFoot
+                    │                   └── RightFootJoint
+                    │                       └── (related geometry)
+                    └── LeftThigh
+                        └── RightThighJoint
+                            ├── (related geometry)
+                            └── LeftCalf
+                                └── LeftCalfJoint
+                                    ├── (related geometry)
+                                    └── LeftFoot
+                                        └── LeftFootJoint
+                                            └── (related geometry)
+
